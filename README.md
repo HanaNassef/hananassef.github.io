@@ -4,7 +4,7 @@ Welcome to my GitHub portfolio! Here, you’ll find a collection of my projects,
 
 ## About Me
 
-I am Hana Nassef, a Computer Engineering student at Nile University and a Data Scientist student at ALX. I am passionate about using my technical skills to solve real-world problems and make an impact in the world.
+I am Hana Nassef, a Computer Engineering student at Nile University and a Data Science graduate from ALX. I am passionate about using my technical skills to solve real-world problems and make an impact in the world.
 
 ## Experience
 
