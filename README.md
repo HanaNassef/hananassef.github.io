@@ -50,8 +50,7 @@ October 2022 – Present
 
 ## Education & Certifications
 
-- **Bachelor of Applied Science, Computer Engineering** – *Nile University*  
-  *(Expected Graduation: July 2026)*
+- **Bachelor of Applied Science, Computer Engineering** – *Nile University*  *(Expected Graduation: July 2026)*
 - **Data Science Graduate** – *African Leadership Experience (ALX) Egypt* *(Completed August 2024)*
 - **AI Career Essentials (AiCE)** – *ALX* *(Completed December 2024)*
 - **Data Science Student** – *Digital Egypt Pioneers Initiative (DEPI) Egypt* *(In Progress)*
