@@ -1,76 +1,55 @@
 # Hana Nassef's Portfolio
 
-Welcome to my GitHub portfolio! Here, you’ll find a collection of my projects, contributions, and accomplishments.
+Welcome! This is a collection of my projects and a summary of my journey in **Computer Engineering** and **Data Science**.  
+I'm passionate about building innovative solutions with a focus on **Machine Learning**.
 
-## About Me
+Connect with me on [LinkedIn](https://www.linkedin.com/in/hana-nassef/).
 
-I am Hana Nassef, a Computer Engineering student at Nile University and a Data Science graduate from ALX. I am passionate about using my technical skills to solve real-world problems and make an impact in the world.
 
-## Experience
-
-### Junior Teaching Assistant
-**Nile University (NU), Sheikh Zayed**  
-*October 2022 - Present*
-
-- Modeled acceptable behavior and built rapport with students to aid in classroom management.
-- Documented updated student data related to grades and attendance.
-- Helped students develop problem-solving skills.
-- Took attendance and kept track of evaluations and paperwork.
-- Identified student challenges and discussed corrective actions with the lead teacher.
-- Helped to explain assignments and test instructions to boost student comprehension.
-
-**Skills:**
-- Teacher Support and Collaboration
-- Microsoft Office Tools
-- Leadership
-- Works Under Pressure
-
-### Highschool Teaching Assistant - IGCSE Tutoring
-*October 2022 - Present*
-
-- Aided in correcting exams and supervised exams and quizzes.
-- Taught one-on-one sessions for weaker students.
-- Assisted in creating classified quizzes and documented student data related to grades and attendance.
-
-**Skills:**
-- Commitment
-- Honesty
-- Leadership
-- Friendly and Apathetic
-- Analyzing Grades and Aiding in Forming Grade Curves
-
-### ALX Student
-*2023 - Present*
-
-- Completed 3 months of soft skills course and 11 months of technical course (Data Science).
-
-## Education
-
-**Associate In Science (A.S.) in Computer Engineering**  
-*Expected Graduation: July 2026*  
-Nile University
+---
 
 ## Skills
 
-- Self-regulation
-- Empathy
-- Project Structuring
-- Project Scoping
-- Small Group Instruction
-- Leadership
-- Teacher Support and Collaboration
-- Storytelling and Presentation
-- Human-centered Thinking
-- Relationship Building
-- Collaboration
+| **Technical Skills** | **Soft Skills** |
+|----------------------|-----------------|
+| **Languages:** Python, SQL, Verilog | Communication |
+| **Machine Learning:** Data Preprocessing, Model Training & Evaluation, Classification, Regression, Federated Learning | Critical Thinking |
+| **ML Libraries:** Scikit-learn, Pandas, NumPy | Problem-Solving |
+| **Web Development:** Angular, Node.js, Express, MongoDB, HTML/CSS, JavaScript | Time Management |
+| **Tools & Platforms:** Power BI, Vivado, Figma, Git & GitHub | Research & Documentation |
+|  | Small Group Instruction |
 
-## Projects
+---
 
-### PathFinder
 
-**About This Project:**  
-Pathfinder helps teens understand themselves better through an online course to increase their career awareness. It connects them with a community of industry experts to share every aspect of their careers. Finally, students have access to tasks that represent real-life projects.
+## Experience
 
-**Project Links:**
-- [Project Presentation](https://docs.google.com/presentation/d/1MVG15wHVivtWr_8JTMuH2rh4HL0QrN7zrMk88MEYmmY/edit?usp=sharing)
-- [Project Document](https://drive.google.com/file/d/1LpMKbMJCtSWkWURNCTPQuphaYiJMOfdI/view?usp=sharing)
+**Information Technology Intern** | *e& Egypt*  
+August 2024  
+- Preprocessed and cleaned raw data for machine learning models, improving input quality by correcting dialect-specific transcriptions.
+- Trained and evaluated fundamental ML models (linear regression, classification) on datasets from Kaggle.
+- Collaborated in a team to develop a full-stack web application using the MERN stack.
+
+**Back Office & RQA Intern** | *Huawei*  
+September 2024  
+- Analyzed network performance and issue-response by observing senior engineers during live site upgrades from 2G to 3G/4G.
+- Documented telecom engineering principles and workflows to build foundational knowledge in network communications.
+
+**Junior Teaching Assistant** | *Nile University*  
+October 2022 – January 2024  
+- Mentored small groups of engineering students, clarifying complex topics and guiding assignments.
+
+**IGCSE Mathematics Teaching Assistant**  
+October 2022 – Present  
+- Developed targeted practice materials using curated past exam questions.
+- Assisted in preparing students for advanced A-Level mathematics examinations.
+
+---
+
+## Education & Certifications
+
+- **Bachelor of Applied Science, Computer Engineering** – *Nile University*  
+  *(Expected Graduation: July 2026)*
+- **Data Science Graduate** – *African Leadership Experience (ALX) Egypt* *(Completed August 2024)*
+- **AI Career Essentials (AiCE)** – *ALX* *(Completed December 2024)*
+- **Data Science Student** – *Digital Egypt Pioneers Initiative (DEPI) Egypt* *(In Progress)*
