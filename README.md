@@ -1,7 +1,9 @@
 # Hana Nassef's Portfolio
 
 Welcome! This is a collection of my projects and a summary of my journey in **Computer Engineering** and **Data Science**.  
-I'm passionate about building innovative solutions with a focus on **Machine Learning**.
+
+## About Me
+A Machine Learning Engineer specializing in Data Science. Proficient in Python, SQL, and data visualization, with hands-on internship experience in data preprocessing, model training, and network analysis at e& Egypt and Huawei. Eager to apply technical skills to build and deploy innovative AI solutions.
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/hana-nassef/).
 
