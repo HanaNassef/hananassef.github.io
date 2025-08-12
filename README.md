@@ -14,7 +14,7 @@ Connect with me on [LinkedIn](https://www.linkedin.com/in/hana-nassef/).
 
 | **Technical Skills** | **Soft Skills** |
 |----------------------|-----------------|
-| **Languages:** Python, SQL, Verilog | Communication |
+| **Languages:** Python, SQL, Verilog, Cpp | Communication |
 | **Machine Learning:** Data Preprocessing, Model Training & Evaluation, Classification, Regression, Federated Learning | Critical Thinking |
 | **ML Libraries:** Scikit-learn, Pandas, NumPy | Problem-Solving |
 | **Web Development:** Angular, Node.js, Express, MongoDB, HTML/CSS, JavaScript | Time Management |
