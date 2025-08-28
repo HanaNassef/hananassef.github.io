@@ -1,56 +1,19 @@
-# Hana Nassef's Portfolio
+# 👋 Hi, I’m Hana Nassef  
 
-Welcome! Here, you’ll find a collection of my projects, contributions, and accomplishments. 
+I’m a Computer Engineer at Nile University with a passion for **AI, Data Science, and teaching**.  
+I’ve gained hands-on experience through internships at **Huawei** and **e& Egypt**, as well as teaching assistant roles in engineering and mathematics.  
 
-## About Me
-A Machine Learning Engineer specializing in Data Science. Proficient in Python, SQL, and data visualization, with hands-on internship experience in data preprocessing, model training, and network analysis at e& Egypt and Huawei. Eager to apply technical skills to build and deploy innovative AI solutions.
-
-Connect with me on [LinkedIn](https://www.linkedin.com/in/hana-nassef/).
-
+🔗 Check out my full portfolio here: [hananassef.github.io](https://hananassef.github.io/)  
 
 ---
 
-## Skills
-
-| **Technical Skills** | **Soft Skills** |
-|----------------------|-----------------|
-| **Languages:** Python, SQL, Verilog, Cpp | Communication |
-| **Machine Learning:** Data Preprocessing, Model Training & Evaluation, Classification, Regression, Federated Learning | Critical Thinking |
-| **ML Libraries:** Scikit-learn, Pandas, NumPy | Problem-Solving |
-| **Web Development:** Angular, Node.js, Express, MongoDB, HTML/CSS, JavaScript | Time Management |
-| **Tools & Platforms:** Power BI, Vivado, Figma, Git & GitHub | Research & Documentation |
-|  | Small Group Instruction |
+### Quick Highlights
+- 🎓 B.Sc. Computer Engineering (2026)  
+- 🤖 AI & Data Science projects (ML models, federated learning, full-stack apps)  
+- 📑 IEEE Publication: *Smart Home System for Enhanced Efficiency and Comfort (2024)*  
+- 📊 Skilled in Python, SQL, Power BI, ML frameworks  
 
 ---
 
-
-## Experience
-
-**Information Technology Intern** | *e& Egypt*  
-August 2024  
-- Preprocessed and cleaned raw data for machine learning models, improving input quality by correcting dialect-specific transcriptions.
-- Trained and evaluated fundamental ML models (linear regression, classification) on datasets from Kaggle.
-- Collaborated in a team to develop a full-stack web application using the MERN stack.
-
-**Back Office & RQA Intern** | *Huawei*  
-September 2024  
-- Analyzed network performance and issue-response by observing senior engineers during live site upgrades from 2G to 3G/4G.
-- Documented telecom engineering principles and workflows to build foundational knowledge in network communications.
-
-**Junior Teaching Assistant** | *Nile University*  
-October 2022 – January 2024  
-- Mentored small groups of engineering students, clarifying complex topics and guiding assignments.
-
-**IGCSE Mathematics Teaching Assistant**  
-October 2022 – Present  
-- Developed targeted practice materials using curated past exam questions.
-- Assisted in preparing students for advanced A-Level mathematics examinations.
-
----
-
-## Education & Certifications
-
-- **Bachelor of Applied Science, Computer Engineering** – *Nile University*  *(Expected Graduation: July 2026)*
-- **Data Science Graduate** – *African Leadership Experience (ALX) Egypt* *(Completed August 2024)*
-- **AI Career Essentials (AiCE)** – *ALX* *(Completed December 2024)*
-- **Data Science Student** – *Digital Egypt Pioneers Initiative (DEPI) Egypt* *(In Progress)*
+📬 **Connect with me:**  
+[LinkedIn](https://www.linkedin.com/in/YOUR-LINKEDIN) | [GitHub](https://github.com/hananassef) | [Email](mailto:hananassef2003@gmail.com)
