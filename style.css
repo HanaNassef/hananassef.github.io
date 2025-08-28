@@ -4,43 +4,41 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  color: #333;
-  background-color: #f5f5f5;
+  color: #e0e0e0; /* light gray text */
+  background-color: #1e1e2f; /* very dark blue / almost black */
 }
 
 header {
-  background-color: #2c3e50;
-  color: white;
+  background-color: #1a1a2f; /* slightly lighter dark header */
+  color: #70cfff; /* soft neon blue for title */
   padding: 2rem;
   text-align: center;
 }
 
 header h1 {
   margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #70cfff; /* glowing effect */
 }
 
+header p {
+  font-size: 1.2rem;
+  color: #a0cfff; /* slightly lighter neon for subtitle */
+}
+
+/* Section Styling */
 section {
   padding: 2rem 5%;
   margin: 1rem auto;
-  background-color: white;
+  background-color: #2a2a3f; /* dark card */
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Profile Picture */
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  float: left;
-  margin-right: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Section Titles */
 h2 {
-  color: #2c3e50;
-  border-bottom: 2px solid #3498db;
+  color: #70cfff; /* neon blue */
+  border-bottom: 2px solid #70cfff;
   display: inline-block;
   margin-bottom: 1rem;
 }
@@ -50,18 +48,47 @@ ul {
   padding-left: 1.2rem;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #2c3e50;
-  color: white;
-}
-
 /* Links */
 a {
-  color: #3498db;
+  color: #70cfff;
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1a1a2f;
+  color: #e0e0e0;
+}
+
+/* Interactive Skills */
+.skills-list {
+  display: none;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.skills-button {
+  background-color: #1a1a3f;
+  border: 1px solid #70cfff;
+  color: #70cfff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.skills-button:hover {
+  background-color: #333359;
+}
+
+/* Optional small card styling for projects/experience */
+article {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 3px solid #70cfff;
 }
