@@ -1,0 +1,67 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+section {
+  padding: 2rem 5%;
+  margin: 1rem auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: left;
+  margin-right: 1.5rem;
+}
+
+/* Section Titles */
+h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* Lists */
+ul {
+  padding-left: 1.2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2c3e50;
+  color: white;
+}
+
+/* Links */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
