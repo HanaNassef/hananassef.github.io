@@ -7,19 +7,22 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Neural glowing background -->
+  <canvas id="neuralCanvas"></canvas>
+
+  <!-- Side navigation dots -->
+  <nav>
+    <a href="#about"></a>
+    <a href="#skills"></a>
+    <a href="#projects"></a>
+    <a href="#experience"></a>
+    <a href="#contact"></a>
+  </nav>
+
   <!-- Header -->
   <header>
     <h1>Hana Nassef</h1>
     <p>Computer Engineer | AI & Data Enthusiast</p>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <!-- About -->
@@ -35,32 +38,34 @@
   <!-- Skills -->
   <section id="skills">
     <h2>Skills</h2>
-    <div class="skill-group">
-      <button class="toggle-btn" data-skill="programming-skills">Programming</button>
-      <ul id="programming-skills" class="skills-list">
-        <li>Python</li>
-        <li>C++</li>
-        <li>JavaScript</li>
-        <li>SQL</li>
-      </ul>
-    </div>
-    <div class="skill-group">
-      <button class="toggle-btn" data-skill="data-skills">Data Science</button>
-      <ul id="data-skills" class="skills-list">
-        <li>Machine Learning</li>
-        <li>Pandas / NumPy</li>
-        <li>Power BI</li>
-        <li>Deep Learning</li>
-      </ul>
-    </div>
-    <div class="skill-group">
-      <button class="toggle-btn" data-skill="tools-skills">Tools & Frameworks</button>
-      <ul id="tools-skills" class="skills-list">
-        <li>TensorFlow</li>
-        <li>Scikit-learn</li>
-        <li>Git & GitHub</li>
-        <li>Angular</li>
-      </ul>
+    <div class="skills-container">
+      <div class="skill-box">
+        <h3>Programming</h3>
+        <ul>
+          <li>Python</li>
+          <li>C++</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>Data Science</h3>
+        <ul>
+          <li>Machine Learning</li>
+          <li>Pandas / NumPy</li>
+          <li>Power BI</li>
+          <li>Deep Learning</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>Tools & Frameworks</h3>
+        <ul>
+          <li>TensorFlow</li>
+          <li>Scikit-learn</li>
+          <li>Git & GitHub</li>
+          <li>Angular</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -111,13 +116,12 @@
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:hana.nassef@example.com">hana.nassef@example.com</a></p>
+  <!-- Footer Contact -->
+  <footer id="contact">
+    <p>Email: <a href="mailto:hananassef2003@gmail.com">hananassef2003@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/hananassef" target="_blank">github.com/hananassef</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/hananassef" target="_blank">linkedin.com/in/hananassef</a></p>
-  </section>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/hana-nassef/" target="_blank">linkedin.com/in/hana-nassef/</a></p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

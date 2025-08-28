@@ -1,116 +1,98 @@
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  color: #e0e0e0; 
-  background-color: #1e1e2f; 
-  overflow-x: hidden; 
-  position: relative;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at center, #0d1b2a, #000814);
+  color: #e0e1dd;
+  overflow-x: hidden;
 }
 
 
-#neural-bg {
+nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1; 
-  background: #1e1e2f; 
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
 }
 
-
-header {
-  background-color: rgba(26, 26, 47, 0.9); 
-  color: #70cfff; 
-  padding: 2rem;
-  text-align: center;
+nav a {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #778da9;
+  display: block;
+  transition: 0.3s;
 }
 
-header h1 {
-  margin-bottom: 0.5rem;
-  font-size: 2.5rem;
-  text-shadow: 0 0 10px #70cfff; 
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #a0cfff; 
+nav a:hover,
+nav a.active {
+  background: #fca311;
+  box-shadow: 0 0 8px #fca311;
 }
 
 
 section {
-  padding: 2rem 5%;
-  margin: 1rem auto;
-  background-color: rgba(42, 42, 63, 0.9); 
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  padding: 80px 10%;
+  text-align: center;
+  position: relative;
+}
+
+h1, h2, h3 {
+  color: #fca311;
 }
 
 
-h2 {
-  color: #70cfff; 
-  border-bottom: 2px solid #70cfff;
-  display: inline-block;
-  margin-bottom: 1rem;
+canvas#neuralCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
 }
 
 
-ul {
-  padding-left: 1.2rem;
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.skill-box:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #fca31155;
 }
 
 
 a {
-  color: #70cfff;
+  color: #fca311;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
 
 
 footer {
+  background: #0d1b2a;
+  padding: 20px;
   text-align: center;
-  padding: 1rem;
-  background-color: rgba(26, 26, 47, 0.9);
-  color: #e0e0e0;
-}
-
-
-.skills-list {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out, padding 0.3s ease-out;
-  padding: 0 15px; /* collapsed state, no vertical padding */
-}
-
-.skills-list.open {
-  max-height: 500px; /* big enough to fit all skills */
-  padding: 15px; /* restore padding when open */
-}
-
-
-
-.skills-button {
-  background-color: #1a1a3f;
-  border: 1px solid #70cfff;
-  color: #70cfff;
-  padding: 0.3rem 0.8rem;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 0.5rem;
-}
-
-.skills-button:hover {
-  background-color: #333359;
-}
-
-
-article {
-  margin-bottom: 1rem;
-  padding: 1rem;
-  border-left: 3px solid #70cfff;
+  border-top: 1px solid #1b263b;
 }
