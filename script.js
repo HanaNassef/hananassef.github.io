@@ -1,14 +1,18 @@
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
+
+document.querySelectorAll(".toggle-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    const skillsList = button.nextElementSibling;
+
+    if (skillsList.classList.contains("open")) {
+      skillsList.classList.remove("open");
+    } else {
+      skillsList.classList.add("open");
+    }
   });
 });
 
-// Optional: Show "back to top" button
+
+
 const backToTop = document.createElement('button');
 backToTop.textContent = "↑ Top";
 backToTop.style.position = "fixed";
@@ -22,7 +26,20 @@ window.addEventListener('scroll', () => {
 });
 backToTop.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
 
-function toggleSkills(skillType) {
+
+function setupSkillHover(skillType) {
+  const trigger = document.querySelector(`[data-skill="${skillType}"]`);
   const list = document.getElementById(skillType);
-  list.style.display = (list.style.display === "block") ? "none" : "block";
+
+  if (trigger && list) {
+    trigger.addEventListener("mouseenter", () => list.style.display = "block");
+    trigger.addEventListener("mouseleave", () => list.style.display = "none");
+    list.addEventListener("mouseenter", () => list.style.display = "block");
+    list.addEventListener("mouseleave", () => list.style.display = "none");
+  }
 }
+
+
+setupSkillHover("programming-skills");
+setupSkillHover("data-skills");
+setupSkillHover("tools-skills");

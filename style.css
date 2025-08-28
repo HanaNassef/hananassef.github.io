@@ -1,16 +1,30 @@
-/* General Styles */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  color: #e0e0e0; /* light gray text */
-  background-color: #1e1e2f; /* very dark blue / almost black */
+  color: #e0e0e0; 
+  background-color: #1e1e2f; 
+  overflow-x: hidden; 
+  position: relative;
 }
 
+
+#neural-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; 
+  background: #1e1e2f; 
+}
+
+
 header {
-  background-color: #1a1a2f; /* slightly lighter dark header */
-  color: #70cfff; /* soft neon blue for title */
+  background-color: rgba(26, 26, 47, 0.9); 
+  color: #70cfff; 
   padding: 2rem;
   text-align: center;
 }
@@ -18,37 +32,37 @@ header {
 header h1 {
   margin-bottom: 0.5rem;
   font-size: 2.5rem;
-  text-shadow: 0 0 10px #70cfff; /* glowing effect */
+  text-shadow: 0 0 10px #70cfff; 
 }
 
 header p {
   font-size: 1.2rem;
-  color: #a0cfff; /* slightly lighter neon for subtitle */
+  color: #a0cfff; 
 }
 
-/* Section Styling */
+
 section {
   padding: 2rem 5%;
   margin: 1rem auto;
-  background-color: #2a2a3f; /* dark card */
+  background-color: rgba(42, 42, 63, 0.9); 
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Section Titles */
+
 h2 {
-  color: #70cfff; /* neon blue */
+  color: #70cfff; 
   border-bottom: 2px solid #70cfff;
   display: inline-block;
   margin-bottom: 1rem;
 }
 
-/* Lists */
+
 ul {
   padding-left: 1.2rem;
 }
 
-/* Links */
+
 a {
   color: #70cfff;
   text-decoration: none;
@@ -57,20 +71,28 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
+
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #1a1a2f;
+  background-color: rgba(26, 26, 47, 0.9);
   color: #e0e0e0;
 }
 
-/* Interactive Skills */
+
 .skills-list {
-  display: none;
-  margin-top: 0.5rem;
-  padding-left: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, padding 0.3s ease-out;
+  padding: 0 15px; /* collapsed state, no vertical padding */
 }
+
+.skills-list.open {
+  max-height: 500px; /* big enough to fit all skills */
+  padding: 15px; /* restore padding when open */
+}
+
+
 
 .skills-button {
   background-color: #1a1a3f;
@@ -86,7 +108,7 @@ footer {
   background-color: #333359;
 }
 
-/* Optional small card styling for projects/experience */
+
 article {
   margin-bottom: 1rem;
   padding: 1rem;
