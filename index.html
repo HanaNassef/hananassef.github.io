@@ -4,19 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hana Nassef - Portfolio</title>
-    <!-- Google Fonts for a modern, clean look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    <!-- The animated background canvas -->
     <canvas id="neuralCanvas"></canvas>
 
-    <!-- Side navigation bar -->
     <nav class="side-nav">
         <ul>
             <li><a href="#home" class="nav-link active" data-tooltip="Home"><i class="fas fa-home"></i></a></li>
@@ -28,112 +24,139 @@
         </ul>
     </nav>
 
-    <!-- Main Content Wrapper -->
-    <main class="content">
-        <!-- Home/Hero Section -->
+    <main>
         <section id="home" class="hero-section">
-            <div class="hero-content">
-                <h1 class="fade-in">Hana Nassef</h1>
-                <p class="fade-in" style="animation-delay: 0.2s;">Computer Engineer | AI & Data Enthusiast</p>
-                <a href="#projects" class="cta-button fade-in" style="animation-delay: 0.4s;">View My Work</a>
+            <div class="hero-content fade-in">
+                <h1>Hana Nassef</h1>
+                <p>Machine Learning Engineer & Data Scientist</p>
+                <a href="#about" class="cta-button">Discover More</a>
             </div>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="scroll-reveal">
             <h2>About Me</h2>
             <div class="about-container">
-                <img src="https://placehold.co/150x150/1B263B/E0E1DD?text=HN" alt="Hana Nassef" class="profile-pic">
-                <p>
-                    I am a computer engineering student at Nile University with a deep passion for
-                    Artificial Intelligence, data science, and creating meaningful, technology-driven projects. My goal is to leverage my skills
-                    to combine technology with creativity and build innovative solutions for real-world problems.
-                </p>
+                <div class="about-image">
+                    <img src="assets/images/profile.heic" alt="Hana Nassef">
+                </div>
+                <div class="about-content">
+                    <h3>Hello, I'm Hana!</h3>
+                    <p>
+                        I'm a passionate Computer Engineering student at Nile University with a strong interest in AI and Data Science. My journey in technology has been driven by a curiosity to solve real-world problems through data-driven insights and intelligent systems. I have had the privilege to gain hands-on experience through internships at industry leaders like **Huawei** and **e& Egypt**, where I've worked on data preprocessing, model training, and network performance analysis.
+                    </p>
+                    <p>
+                        I'm also a published author in IEEE for my work on a "Smart Home System for Enhanced Efficiency and Comfort." I'm always eager to learn and apply new technologies to build innovative solutions.
+                    </p>
+                    <div class="about-buttons">
+                        <a href="My CV updated.docx" class="cta-button" download="Hana-Nassef-CV.docx">Download CV</a>
+                        <a href="#contact" class="cta-button secondary">Contact Me</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
         <section id="skills" class="scroll-reveal">
-            <h2>My Skillset</h2>
-            <div class="skills-grid">
+            <h2>Core Competencies</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Model Training, Evaluation, Federated Learning, and Data Preprocessing.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Science</h3>
+                    <p>Data Visualization, ETL, and Statistical Analysis with tools like Power BI.</p>
+                </div>
                 <div class="skill-card">
                     <i class="fas fa-code"></i>
                     <h3>Programming</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>C++</li>
-                        <li>JavaScript</li>
-                        <li>SQL</li>
-                    </ul>
+                    <p>Proficient in Python, SQL, C++, and Verilog for various applications.</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-brain"></i>
-                    <h3>Data Science & AI</h3>
-                    <ul>
-                        <li>Machine Learning</li>
-                        <li>Deep Learning</li>
-                        <li>Pandas / NumPy</li>
-                        <li>Power BI</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-tools"></i>
-                    <h3>Tools & Frameworks</h3>
-                    <ul>
-                        <li>TensorFlow</li>
-                        <li>Scikit-learn</li>
-                        <li>Git & GitHub</li>
-                        <li>Angular</li>
-                    </ul>
+                 <div class="skill-card">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Hardware & Systems</h3>
+                    <p>Experience in digital logic design, computer architecture, and FPGA synthesis with Xilinx Vivado.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects" class="scroll-reveal">
-            <h2>Projects</h2>
-            <div class="projects-grid">
+            <h2>My Projects</h2>
+            <div class="projects-container">
                 <div class="project-card">
-                    <h3>Network Fault Node Detection</h3>
-                    <p>Developed a machine learning model in Python to identify and predict fault nodes within a simulated network environment, enhancing network reliability.</p>
-                    <div class="technologies">
-                        <span>Python</span>
-                        <span>Scikit-learn</span>
-                        <span>Pandas</span>
+                    <div class="project-image">
+                         <img src="assets/images/cover.jpg" alt="Project 1">
                     </div>
-                    <a href="#" class="project-link" target="_blank">View on GitHub <i class="fab fa-github"></i></a>
+                    <div class="project-content">
+                        <h3>Verilog Single-Cycle DSP Processor</h3>
+                        <p>Designed and simulated a single-cycle CPU with an integrated DSP unit for efficient arithmetic processing. Synthesized for FPGA deployment.</p>
+                        <div class="project-tags">
+                            <span>Verilog</span>
+                            <span>Xilinx Vivado</span>
+                            <span>FPGA</span>
+                        </div>
+                        <a href="https://github.com/HanaNassef/verilog-single-cycle-dsp" target="_blank" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <h3>Automatic C++ Loop Parallelization</h3>
-                    <p>Created a source-to-source compiler tool that automatically parallelizes loops in C++ code to significantly optimize execution time on multi-core processors.</p>
-                    <div class="technologies">
-                        <span>C++</span>
-                        <span>Compiler Design</span>
-                        <span>Optimization</span>
+                     <div class="project-image">
+                        <img src="assets/images/cover.jpg" alt="Project 2">
                     </div>
-                    <a href="#" class="project-link" target="_blank">View on GitHub <i class="fab fa-github"></i></a>
+                    <div class="project-content">
+                        <h3>UNSW-NB15 Network Fault Detection</h3>
+                        <p>Developed a machine learning model to detect network intrusions using the UNSW-NB15 dataset, achieving high accuracy in classifying malicious traffic.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>Pandas</span>
+                        </div>
+                        <a href="https://github.com/HanaNassef/unsw-nb15-network-fault-detection" target="_blank" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                     <div class="project-image">
+                        <img src="assets/images/cover.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <h3>C++ OpenMP AutoParallelizer</h3>
+                        <p>A tool to automatically parallelize C++ code using OpenMP directives, with performance analysis to demonstrate speedup over sequential code.</p>
+                        <div class="project-tags">
+                            <span>C++</span>
+                            <span>OpenMP</span>
+                            <span>Intel VTune</span>
+                        </div>
+                        <a href="https://github.com/HanaNassef/Cpp-OpenMP-AutoParallelizer" target="_blank" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience Section -->
         <section id="experience" class="scroll-reveal">
-            <h2>Experience</h2>
+            <h2>Professional Journey</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Etisalat (e&)</h3>
-                        <p class="timeline-date">Internship</p>
-                        <p>Rotated between AI Engineering and Web Development teams. Built a functional Arabic chatbot, contributed to an Angular-based web application, and completed various deep learning tasks.</p>
+                        <h3>Huawei</h3>
+                        <p class="timeline-date">Back Office & RQA Intern</p>
+                        <p>Gained foundational knowledge in network communications by analyzing network performance and observing live site upgrades.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Huawei</h3>
-                         <p class="timeline-date">Internship</p>
-                        <p>Gained hands-on exposure to mobile network operations, including back-office tasks, live network troubleshooting, and performance analysis using KPIs.</p>
+                        <h3>e& Egypt</h3>
+                        <p class="timeline-date">Information Technology Intern</p>
+                        <p>Preprocessed and cleaned raw data for ML models, trained fundamental models, and collaborated on a full-stack web application.</p>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>IGCSE</h3>
+                        <p class="timeline-date">Mathematics Teaching Assistant</p>
+                        <p>Provided individualized support to students, helping them to excel in mathematics through tailored instruction and mentorship.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -147,7 +170,6 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <footer id="contact" class="scroll-reveal">
             <h2>Get In Touch</h2>
             <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious vision.</p>
@@ -156,10 +178,10 @@
                 <a href="https://github.com/hananassef" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/hana-nassef/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
             </div>
-            <p class="copyright">&copy; 2024 Hana Nassef. All Rights Reserved.</p>
+            <p class="copyright">&copy; 2025 Hana Nassef. All Rights Reserved.</p>
         </footer>
     </main>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
