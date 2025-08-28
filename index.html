@@ -86,10 +86,25 @@
 <!-- Skills -->
 <section id="skills">
   <h2>Skills</h2>
-  <h3>Technical</h3>
-  <p>Python, SQL, Power BI, Data Visualization, Machine Learning, Federated Learning, Vivado</p>
-  <h3>Soft</h3>
-  <p>Communication, Critical Thinking, Time Management, Research, Small Group Instruction</p>
+  <button class="skills-button" onclick="toggleSkills('technical')">Technical Skills</button>
+  <ul id="technical" class="skills-list">
+    <li>Python</li>
+    <li>SQL</li>
+    <li>Power BI</li>
+    <li>Data Visualization</li>
+    <li>Machine Learning</li>
+    <li>Federated Learning</li>
+    <li>Vivado</li>
+  </ul>
+
+  <button class="skills-button" onclick="toggleSkills('soft')">Soft Skills</button>
+  <ul id="soft" class="skills-list">
+    <li>Communication</li>
+    <li>Critical Thinking</li>
+    <li>Time Management</li>
+    <li>Research</li>
+    <li>Small Group Instruction</li>
+  </ul>
 </section>
 
 <footer>
