@@ -1,4 +1,4 @@
-# 👋 Hi, I’m Hana Nassef  
+# Hi, I’m Hana Nassef  
 
 I’m a Computer Engineer at Nile University with a passion for **AI, Data Science, and teaching**.  
 I’ve gained hands-on experience through internships at **Huawei** and **e& Egypt**, as well as teaching assistant roles in engineering and mathematics.  
