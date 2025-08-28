@@ -1,128 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hana Nassef - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hana Nassef - Portfolio</title>
+    <!-- Google Fonts for a modern, clean look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Neural glowing background -->
-  <canvas id="neuralCanvas"></canvas>
+    <!-- The animated background canvas -->
+    <canvas id="neuralCanvas"></canvas>
 
-  <!-- Side navigation dots -->
-  <nav>
-    <a href="#about"></a>
-    <a href="#skills"></a>
-    <a href="#projects"></a>
-    <a href="#experience"></a>
-    <a href="#contact"></a>
-  </nav>
-
-  <!-- Header -->
-  <header>
-    <h1>Hana Nassef</h1>
-    <p>Computer Engineer | AI & Data Enthusiast</p>
-  </header>
-
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a computer engineering student at Nile University with a passion for
-      AI, data science, and creating meaningful projects. I aim to combine
-      technology with creativity to solve real-world problems.
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill-box">
-        <h3>Programming</h3>
+    <!-- Side navigation bar -->
+    <nav class="side-nav">
         <ul>
-          <li>Python</li>
-          <li>C++</li>
-          <li>JavaScript</li>
-          <li>SQL</li>
+            <li><a href="#home" class="nav-link active" data-tooltip="Home"><i class="fas fa-home"></i></a></li>
+            <li><a href="#about" class="nav-link" data-tooltip="About"><i class="fas fa-user"></i></a></li>
+            <li><a href="#skills" class="nav-link" data-tooltip="Skills"><i class="fas fa-cogs"></i></a></li>
+            <li><a href="#projects" class="nav-link" data-tooltip="Projects"><i class="fas fa-project-diagram"></i></a></li>
+            <li><a href="#experience" class="nav-link" data-tooltip="Experience"><i class="fas fa-briefcase"></i></a></li>
+            <li><a href="#contact" class="nav-link" data-tooltip="Contact"><i class="fas fa-envelope"></i></a></li>
         </ul>
-      </div>
-      <div class="skill-box">
-        <h3>Data Science</h3>
-        <ul>
-          <li>Machine Learning</li>
-          <li>Pandas / NumPy</li>
-          <li>Power BI</li>
-          <li>Deep Learning</li>
-        </ul>
-      </div>
-      <div class="skill-box">
-        <h3>Tools & Frameworks</h3>
-        <ul>
-          <li>TensorFlow</li>
-          <li>Scikit-learn</li>
-          <li>Git & GitHub</li>
-          <li>Angular</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Network Fault Node Detection</h3>
-      <p>
-        Developed a machine learning model in Python to identify and predict
-        fault nodes within a simulated network environment.
-      </p>
-      <p><strong>Technologies:</strong> Python, Scikit-learn, Pandas, NumPy</p>
-    </div>
-    <div class="project">
-      <h3>Automatic C++ Loop Parallelization Tool</h3>
-      <p>
-        Created a source-to-source compiler tool that automatically parallelizes
-        loops in C++ code to optimize execution.
-      </p>
-      <p><strong>Technologies:</strong> C++, Compiler Design</p>
-    </div>
-  </section>
+    <!-- Main Content Wrapper -->
+    <main class="content">
+        <!-- Home/Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="fade-in">Hana Nassef</h1>
+                <p class="fade-in" style="animation-delay: 0.2s;">Computer Engineer | AI & Data Enthusiast</p>
+                <a href="#projects" class="cta-button fade-in" style="animation-delay: 0.4s;">View My Work</a>
+            </div>
+        </section>
 
-  <!-- Experience -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="experience-item">
-      <h3>Etisalat (e&) Internship</h3>
-      <p>
-        AI Engineering & Web Development rotations. Built an Arabic chatbot,
-        worked with Angular, and completed deep learning tasks.
-      </p>
-    </div>
-    <div class="experience-item">
-      <h3>Huawei Internship</h3>
-      <p>
-        Gained exposure to mobile network operations, back-office tasks,
-        troubleshooting, and KPI analysis.
-      </p>
-    </div>
-    <div class="experience-item">
-      <h3>Junior Teaching Assistant</h3>
-      <p>
-        Assisted Nile University professors in delivering computer engineering
-        courses to younger students.
-      </p>
-    </div>
-  </section>
+        <!-- About Section -->
+        <section id="about" class="scroll-reveal">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <img src="https://placehold.co/150x150/1B263B/E0E1DD?text=HN" alt="Hana Nassef" class="profile-pic">
+                <p>
+                    I am a computer engineering student at Nile University with a deep passion for
+                    Artificial Intelligence, data science, and creating meaningful, technology-driven projects. My goal is to leverage my skills
+                    to combine technology with creativity and build innovative solutions for real-world problems.
+                </p>
+            </div>
+        </section>
 
-  <!-- Footer Contact -->
-  <footer id="contact">
-    <p>Email: <a href="mailto:hananassef2003@gmail.com">hananassef2003@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/hananassef" target="_blank">github.com/hananassef</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/hana-nassef/" target="_blank">linkedin.com/in/hana-nassef/</a></p>
-  </footer>
+        <!-- Skills Section -->
+        <section id="skills" class="scroll-reveal">
+            <h2>My Skillset</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Data Science & AI</h3>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>Pandas / NumPy</li>
+                        <li>Power BI</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Tools & Frameworks</h3>
+                    <ul>
+                        <li>TensorFlow</li>
+                        <li>Scikit-learn</li>
+                        <li>Git & GitHub</li>
+                        <li>Angular</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-  <script src="script.js"></script>
+        <!-- Projects Section -->
+        <section id="projects" class="scroll-reveal">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Network Fault Node Detection</h3>
+                    <p>Developed a machine learning model in Python to identify and predict fault nodes within a simulated network environment, enhancing network reliability.</p>
+                    <div class="technologies">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>Pandas</span>
+                    </div>
+                    <a href="#" class="project-link" target="_blank">View on GitHub <i class="fab fa-github"></i></a>
+                </div>
+                <div class="project-card">
+                    <h3>Automatic C++ Loop Parallelization</h3>
+                    <p>Created a source-to-source compiler tool that automatically parallelizes loops in C++ code to significantly optimize execution time on multi-core processors.</p>
+                    <div class="technologies">
+                        <span>C++</span>
+                        <span>Compiler Design</span>
+                        <span>Optimization</span>
+                    </div>
+                    <a href="#" class="project-link" target="_blank">View on GitHub <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="scroll-reveal">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Etisalat (e&)</h3>
+                        <p class="timeline-date">Internship</p>
+                        <p>Rotated between AI Engineering and Web Development teams. Built a functional Arabic chatbot, contributed to an Angular-based web application, and completed various deep learning tasks.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Huawei</h3>
+                         <p class="timeline-date">Internship</p>
+                        <p>Gained hands-on exposure to mobile network operations, including back-office tasks, live network troubleshooting, and performance analysis using KPIs.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Nile University</h3>
+                         <p class="timeline-date">Junior Teaching Assistant</p>
+                        <p>Assisted university professors in delivering foundational computer engineering courses, mentoring younger students, and grading assignments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <footer id="contact" class="scroll-reveal">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious vision.</p>
+            <a href="mailto:hananassef2003@gmail.com" class="cta-button">Say Hello</a>
+            <div class="social-links">
+                <a href="https://github.com/hananassef" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hana-nassef/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="copyright">&copy; 2024 Hana Nassef. All Rights Reserved.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
