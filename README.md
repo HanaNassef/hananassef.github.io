@@ -16,4 +16,4 @@ I’ve gained hands-on experience through internships at **Huawei** and **e& Egy
 ---
 
 📬 **Connect with me:**  
-[LinkedIn](https://www.linkedin.com/in/YOUR-LINKEDIN) | [GitHub](https://github.com/hananassef) | [Email](mailto:hananassef2003@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/hana-nassef) | [GitHub](https://github.com/hananassef) | [Email](mailto:hananassef2003@gmail.com)
