@@ -24,7 +24,7 @@ body {
 }
 
 main {
-    margin-left: 60px; /* Space for the side nav */
+    margin-left: 60px;
 }
 
 h1, h2, h3 {
@@ -311,6 +311,9 @@ section {
 
 .project-tags {
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 5px;           
 }
 
 .project-tags span {
@@ -319,10 +322,10 @@ section {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.8rem;
-    margin-right: 5px;
-    display: inline-block;
-    margin-bottom: 5px;
+    display: inline-block; 
+    margin-bottom: 0;     
 }
+
 
 .project-link {
     color: var(--primary-color);
