@@ -1,13 +1,13 @@
 /* --- Global Styles & Variables --- */
 :root {
-    --background-dark: #0a192f;
-    --card-background: #112240;
-    --primary-color: #64ffda;
+    --background-dark: #040a14;
+    --card-background: #08101E;
+    --primary-color: #89b9e0;
     --secondary-color: #8892b0;
     --text-primary: #ccd6f6;
     --text-secondary: #8892b0;
-    --border-color: #233554;
-    --hover-color: #173a5e;
+    --border-color: #1A2B4D;
+    --hover-color: #112240;
 }
 
 * {
@@ -167,7 +167,7 @@ section {
 }
 
 .cta-button:hover {
-    background-color: rgba(100, 255, 218, 0.1);
+    background-color: rgba(137, 185, 224, 0.1);
 }
 
 .cta-button.secondary {
@@ -216,7 +216,7 @@ section {
     height: auto;
     border-radius: 50%;
     border: 5px solid var(--border-color);
-    box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
+    box-shadow: 0 0 20px rgba(137, 185, 224, 0.2);
 }
 
 
@@ -317,7 +317,7 @@ section {
 }
 
 .project-tags span {
-    background-color: rgba(100, 255, 218, 0.1);
+    background-color: rgba(137, 185, 224, 0.1);
     color: var(--primary-color);
     padding: 5px 10px;
     border-radius: 5px;

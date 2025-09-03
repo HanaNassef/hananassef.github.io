@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Particle properties
     const particleConfig = {
         count: 100,
-        color: 'rgba(74, 144, 226, 0.8)', // --primary-color with alpha
-        lineColor: 'rgba(80, 227, 194, 0.2)', // --secondary-color with alpha
+        color: 'rgba(137, 185, 224, 0.8)', // Updated to new primary color
+        lineColor: 'rgba(137, 185, 224, 0.2)', // Updated to new primary color
         radius: 2,
         speed: 0.5,
         connectionDistance: 120
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (distance < (canvas.width / 7) * (canvas.height / 7)) {
                     if (distance < particleConfig.connectionDistance * particleConfig.connectionDistance) {
                         opacityValue = 1 - (distance / (particleConfig.connectionDistance * particleConfig.connectionDistance));
-                        ctx.strokeStyle = `rgba(80, 227, 194, ${opacityValue})`; // Use line color from config
+                        ctx.strokeStyle = `rgba(137, 185, 224, ${opacityValue})`; // Updated to new primary color
                         ctx.lineWidth = 1;
                         ctx.beginPath();
                         ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
