@@ -220,7 +220,7 @@ section {
 }
 
 
-/* --- Skills Section --- */
+/* --- Skills Section (Corrected & Consolidated) --- */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -232,9 +232,9 @@ section {
     background-color: var(--card-background);
     padding: 30px;
     border-radius: 10px;
-    text-align: center;
     border: 1px solid var(--border-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left; /* Aligns icon and title to the left */
 }
 
 .skill-card:hover {
@@ -251,6 +251,45 @@ section {
 .skill-card h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+    height: 0; /* Initially hide the list */
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.skill-card li {
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.skill-card li::before {
+    content: '»';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.skill-card:hover ul {
+    height: 130px; /* Animate height to reveal list. Adjust if content overflows. */
+    opacity: 1;
+}
+
+.skill-card:hover ul li {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -521,57 +560,3 @@ section {
         left: 0;
     }
 }
-
-
-.skill-card ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-    text-align: left;
-    height: 0; 
-    overflow: hidden; 
-    opacity: 0; 
-    transition: height 0.5s ease-out, opacity 0.5s ease-out, margin-top 0.5s ease-out;
-}
-
-.skill-card li {
-    color: var(--text-secondary);
-    margin-bottom: 8px; 
-    position: relative;
-    padding-left: 20px;
-    font-size: 0.95rem;
-    line-height: 1.4;
-    transform: translateY(10px); 
-    opacity: 0; 
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-}
-
-.skill-card li::before {
-    content: '»';
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: var(--primary-color);
-    font-weight: 600;
-}
-
-
-.skill-card:hover ul {
-    height: auto; 
-    max-height: 200px; 
-    opacity: 1; 
-    margin-top: 20px; 
-}
-
-
-.skill-card:hover ul li {
-    opacity: 1; 
-    transform: translateY(0); 
-}
-
-
-.skill-card:hover ul li:nth-child(1) { transition-delay: 0.1s; }
-.skill-card:hover ul li:nth-child(2) { transition-delay: 0.15s; }
-.skill-card:hover ul li:nth-child(3) { transition-delay: 0.2s; }
-.skill-card:hover ul li:nth-child(4) { transition-delay: 0.25s; }
-.skill-card:hover ul li:nth-child(5) { transition-delay: 0.3s; }
