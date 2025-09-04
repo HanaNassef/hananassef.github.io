@@ -219,7 +219,6 @@ section {
     box-shadow: 0 0 20px rgba(137, 185, 224, 0.2);
 }
 
-
 /* --- Skills Section (Corrected & Consolidated) --- */
 .skills-container {
     display: grid;
@@ -258,10 +257,10 @@ section {
     padding: 0;
     margin-top: 20px;
     text-align: left;
-    height: 0; /* Initially hide the list */
+    max-height: 0; /* Use max-height for smooth transition */
     overflow: hidden;
     opacity: 0;
-    transition: height 0.4s ease-out, opacity 0.4s ease-out;
+    transition: max-height 0.5s ease-in-out, opacity 0.4s ease-in-out;
 }
 
 .skill-card li {
@@ -283,15 +282,30 @@ section {
 }
 
 .skill-card:hover ul {
-    height: 130px; /* Animate height to reveal list. Adjust if content overflows. */
+    max-height: 200px; /* Expand to a max-height large enough for content */
     opacity: 1;
+    overflow-y: auto; /* Add a scrollbar if content exceeds max-height */
+    padding-right: 10px; /* Add padding to prevent scrollbar from overlapping text */
 }
 
-.skill-card:hover ul li {
-    opacity: 1;
-    transform: translateY(0);
+/* --- Custom Scrollbar Styling for Skill Cards --- */
+.skill-card ul::-webkit-scrollbar {
+    width: 8px;
 }
 
+.skill-card ul::-webkit-scrollbar-track {
+    background: var(--background-dark);
+    border-radius: 4px;
+}
+
+.skill-card ul::-webkit-scrollbar-thumb {
+    background-color: var(--border-color);
+    border-radius: 4px;
+}
+
+.skill-card ul::-webkit-scrollbar-thumb:hover {
+    background-color: var(--secondary-color);
+}
 
 /* --- Projects Section --- */
 #projects {
