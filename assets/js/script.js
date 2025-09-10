@@ -4,23 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('neuralCanvas');
     const ctx = canvas.getContext('2d');
 
-    // Set canvas to full screen
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
     let particlesArray;
 
-    // Particle properties
     const particleConfig = {
         count: 100,
-        color: 'rgba(137, 185, 224, 0.8)', // Updated to new primary color
-        lineColor: 'rgba(137, 185, 224, 0.2)', // Updated to new primary color
+        color: 'rgba(137, 185, 224, 0.8)',
+        lineColor: 'rgba(137, 185, 224, 0.2)',
         radius: 2,
         speed: 0.5,
         connectionDistance: 120
     };
 
-    // Mouse object to interact with particles
     const mouse = {
         x: null,
         y: null,
@@ -37,8 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         mouse.y = undefined;
     });
 
-
-    // Particle class
     class Particle {
         constructor(x, y, directionX, directionY, size, color) {
             this.x = x;
@@ -49,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
             this.color = color;
         }
 
-        // Method to draw individual particle
         draw() {
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
@@ -57,26 +51,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.fill();
         }
 
-        // Check particle position, mouse position, move the particle, and draw it
         update() {
-            // Check if particle is still within canvas
             if (this.x > canvas.width || this.x < 0) {
                 this.directionX = -this.directionX;
             }
             if (this.y > canvas.height || this.y < 0) {
                 this.directionY = -this.directionY;
             }
-
-            // Move particle
             this.x += this.directionX;
             this.y += this.directionY;
-
-            // Draw particle
             this.draw();
         }
     }
 
-    // Create particle array
     function init() {
         particlesArray = [];
         let numberOfParticles = (canvas.height * canvas.width) / 9000;
@@ -94,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Animation loop
     function animate() {
         requestAnimationFrame(animate);
         ctx.clearRect(0, 0, innerWidth, innerHeight);
@@ -105,7 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
         connect();
     }
 
-    // Check if particles are close enough to draw a line between them
     function connect() {
         let opacityValue = 1;
         for (let a = 0; a < particlesArray.length; a++) {
@@ -116,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (distance < (canvas.width / 7) * (canvas.height / 7)) {
                     if (distance < particleConfig.connectionDistance * particleConfig.connectionDistance) {
                         opacityValue = 1 - (distance / (particleConfig.connectionDistance * particleConfig.connectionDistance));
-                        ctx.strokeStyle = `rgba(137, 185, 224, ${opacityValue})`; // Updated to new primary color
+                        ctx.strokeStyle = `rgba(137, 185, 224, ${opacityValue})`;
                         ctx.lineWidth = 1;
                         ctx.beginPath();
                         ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
@@ -128,7 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Resize event
     window.addEventListener('resize', () => {
         canvas.width = innerWidth;
         canvas.height = innerHeight;
@@ -136,10 +120,8 @@ document.addEventListener('DOMContentLoaded', () => {
         init();
     });
 
-    // Start animation
     init();
     animate();
-
 
     // --- Intersection Observer for Scroll Animations ---
     const observerOptions = {
@@ -152,22 +134,19 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                // No need to unobserve, let it stay visible
             }
         });
     }, observerOptions);
 
-    // Observe all sections with the .scroll-reveal class
     const elementsToReveal = document.querySelectorAll('.scroll-reveal');
     elementsToReveal.forEach(el => observer.observe(el));
-
 
     // --- Active Navigation Link on Scroll ---
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('section, footer');
 
     const navObserverOptions = {
-        threshold: 0.5 // 50% of the section should be visible
+        threshold: 0.5
     };
 
     const navObserver = new IntersectionObserver((entries) => {
@@ -185,7 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, navObserverOptions);
 
     sections.forEach(section => {
-        // The hero section is special, let's observe it with a different threshold
         if (section.id === 'home') {
              new IntersectionObserver((entries) => {
                 if(entries[0].isIntersecting){
@@ -201,4 +179,53 @@ document.addEventListener('DOMContentLoaded', () => {
             navObserver.observe(section);
         }
     });
+
+    // --- Project Modal Logic ---
+    const modal = document.getElementById('project-modal');
+    if (modal) {
+        const closeBtn = modal.querySelector('.close-btn');
+        const detailsBtns = document.querySelectorAll('.details-btn');
+
+        const modalImgContainer = document.getElementById('modal-img-container');
+        const modalTitle = document.getElementById('modal-title');
+        const modalTags = document.getElementById('modal-tags');
+        const modalDescription = document.getElementById('modal-description');
+        const modalLink = document.getElementById('modal-link');
+
+        detailsBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const card = btn.closest('.project-card');
+
+                const imgSrc = card.querySelector('.project-image img').src;
+                const title = card.querySelector('.project-content h3').innerText;
+                const tagsHTML = card.querySelector('.project-tags').innerHTML;
+                const descriptionHTML = card.querySelector('.project-details-content').innerHTML;
+                const githubLink = card.querySelector('.project-link').href;
+
+                modalImgContainer.innerHTML = `<img src="${imgSrc}" alt="${title}">`;
+                modalTitle.innerText = title;
+                modalTags.innerHTML = tagsHTML;
+                modalDescription.innerHTML = descriptionHTML;
+                modalLink.href = githubLink;
+                
+                modal.classList.add('visible');
+            });
+        });
+
+        const closeModal = () => {
+            modal.classList.remove('visible');
+        };
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('visible')) {
+                closeModal();
+            }
+        });
+    }
 });
