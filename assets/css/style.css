@@ -474,6 +474,21 @@ section {
 }
 
 /* --- Services Section --- */
+
+#services {
+    box-sizing: border-box; 
+    width: 100%;
+}
+
+.services-container {
+    display: flex;            
+    flex-wrap: wrap;          
+    justify-content: center;   
+    align-items: flex-start;     
+    gap: 30px;                
+    max-width: 900px;       
+    margin: 40px auto 0 auto;  
+}
 .service-card {
     background: var(--card-background);
     padding: 30px;
