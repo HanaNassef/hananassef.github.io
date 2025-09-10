@@ -473,61 +473,36 @@ section {
 }
 
 /* --- Services Section --- */
-#services {
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.section-intro {
-    max-width: 600px;
-    margin: 0 auto 40px auto;
-    font-size: 1.1rem;
-    color: #ccc;
-    line-height: 1.6;
-}
-
-.services-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-}
-
 .service-card {
-    background: #222;
+    background: var(--card-background);
     padding: 30px;
     border-radius: 10px;
     width: 350px;
     text-align: left;
-    border: 1px solid #333;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    background-color: var(--hover-color);
 }
 
 .service-card i {
     font-size: 2.5rem;
-    color: #00bcd4; /* Using one of your theme's accent colors */
+    color: var(--primary-color);
     margin-bottom: 15px;
 }
 
 .service-card h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-}
-
-.service-card ul {
-    list-style: none;
-    padding: 0;
+    color: var(--text-primary);
 }
 
 .service-card ul li {
     margin-bottom: 10px;
-    color: #ccc;
+    color: var(--text-secondary);
     position: relative;
     padding-left: 25px;
 }
@@ -536,19 +511,10 @@ section {
     content: '\f00c'; /* Font Awesome check icon */
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
-    color: #00bcd4;
+    color: var(--primary-color);
     position: absolute;
     left: 0;
     top: 2px;
-}
-
-.services-cta {
-    margin-top: 40px;
-}
-
-.services-cta p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
 }
 
 /* --- Contact Section (Footer) --- */
