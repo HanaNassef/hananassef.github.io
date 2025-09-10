@@ -526,13 +526,18 @@ section {
 }
 
 .service-card ul li::before {
-    content: '\f00c'; /* Font Awesome check icon */
+    content: '\f00c'; 
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     color: var(--primary-color);
     position: absolute;
     left: 0;
     top: 2px;
+}
+.services-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center; 
 }
 
 /* --- Contact Section (Footer) --- */
