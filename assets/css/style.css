@@ -220,12 +220,11 @@ section {
 }
 
 /* --- Skills Section --- */
+
 .skills-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    flex-wrap: wrap;
-    align-items: flex-start; 
 }
 
 .skill-card {
