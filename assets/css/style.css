@@ -646,3 +646,10 @@ section {
         left: 0;
     }
 }
+/* --- Enhancements for Education Section Icons --- */
+#education .timeline-content h3 i {
+    margin-right: 12px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    vertical-align: baseline;
+}
