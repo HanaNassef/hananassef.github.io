@@ -757,3 +757,18 @@ section {
     font-size: 1.2rem;
     vertical-align: baseline;
 }
+.project-card .cta-button.secondary {
+    background-color: transparent;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin-top: auto; 
+    padding-top: 20px; 
+}
+
+.modal {
+    display: flex; 
+}
