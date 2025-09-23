@@ -153,7 +153,7 @@
 			</div>
 		</section>
 
-        <section id="projects" class="scroll-reveal">
+		<section id="projects" class="scroll-reveal">
 			<h2>My Projects</h2>
 			<div class="projects-container">
 				<div class="project-card">
@@ -176,48 +176,102 @@
 						<div class="project-details-content" style="display: none;">
 							<h4>Project Overview</h4>
 							<p>This project is a complete book recommendation system, from data cleaning to a full-stack web application. It serves as a strong demonstration of a machine learning pipeline, API development, and data visualization. The system leverages content-based filtering, recommending books with similar genres and descriptions.</p>
-							<h4>Key Features</h4>
+							
+							<h4>Key Technologies & Concepts</h4>
 							<ul>
-								<li><strong>Recommendation Engine:</strong> The core of the system uses TF-IDF vectorization and cosine similarity to find highly-relevant book suggestions.</li>
-								<li><strong>Robust Filtering:</strong> Recommendations can be tailored by users, who can apply filters for genres, rating ranges, and excluded authors.</li>
-								<li><strong>Fuzzy Matching:</strong> A key feature for user experience, the system can handle typos in both book titles and author names.</li>
-								<li><strong>Interactive Dashboard:</strong> The EDA notebook includes a dynamic dashboard built with Dash to visualize dataset insights.</li>
-								<li><strong>Full-Stack Architecture:</strong> The back-end is a Flask API that processes requests, while the front-end (index.html) is a simple web page that interacts with the API to display results.</li>
+								<li><strong>Python:</strong> The foundational language for the entire project, used for both the machine learning pipeline and the Flask API.</li>
+								<li><strong>Scikit-learn:</strong> Utilized for the core recommendation logic, including <strong>TF-IDF vectorization</strong> and <strong>cosine similarity</strong>, to measure the semantic similarity between books.</li>
+								<li><strong>Flask:</strong> A lightweight web framework used to build a robust back-end API that communicates with the front-end to serve real-time recommendations.</li>
+								<li><strong>Dash:</strong> Used to create the **dynamic and interactive dashboard** for the exploratory data analysis (EDA) notebook, showcasing data visualizations in a clean, web-based format.</li>
+								<li><strong>Pandas:</strong> Employed for all data manipulation, cleaning, and preprocessing tasks, from loading the dataset to preparing it for the recommendation model.</li>
+								<li><strong>FuzzyWuzzy:</strong> An essential library for implementing **fuzzy matching**, which enables the application to handle user typos in book titles and author names.</li>
 							</ul>
 						</div>
 					</div>
 				</div>
-
+				
 				<div class="project-card">
 					<div class="project-image">
-						 <img src="assets/images/modified-arch.PNG" alt="Verilog DSP Processor">
+						<img src="assets/images/unsw-report.png" alt="Network Fault Detection">
 					</div>
 					<div class="project-content">
-						<h3>Verilog Single-Cycle DSP Processor</h3>
-						<p>Designed and simulated a single-cycle CPU with an integrated DSP unit for efficient arithmetic processing. Synthesized for FPGA deployment using Xilinx Vivado.</p>
+						<h3>Network Fault Node Detection</h3>
+						<p>Built a machine learning pipeline to detect and predict fault nodes in a simulated network. Conducted model benchmarking, selected top-performing algorithms, and improved results through hyperparameter tuning and ensemble learning to achieve optimal accuracy.</p>
 						<div class="project-tags">
-							<span>Verilog</span>
-							<span>Xilinx Vivado</span>
-							<span>FPGA</span>
+							<span>Python</span>
+							<span>Scikit-learn</span>
+							<span>Ensemble Learning</span>
 						</div>
 						<div class="project-links">
-							<a href="https://github.com/HanaNassef/verilog-single-cycle-dsp" target="_blank" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
+							<a href="https://github.com/HanaNassef/unsw-nb15-network-fault-detection" target="_blank" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
 							<button class="details-btn cta-button secondary">Details</button>
 						</div>
 						<div class="project-details-content" style="display: none;">
 							<h4>Project Overview</h4>
-							<p>This project implements a single-cycle CPU architecture with an integrated DSP unit, designed and simulated using Xilinx Vivado.</p>
-							<h4>Key Features</h4>
+							<p>This project applies ensemble learning techniques to the UNSW-NB15 dataset for network intrusion detection. A key challenge was the severe class imbalance, which was addressed by creating balanced samples for training and testing.</p>
+							<h4>Workflow</h4>
 							<ul>
-								<li>Single-cycle architecture for simplicity and educational value.</li>
-								<li>Implementation of a custom ALU and DSP unit.</li>
-								<li>Includes data memory, register file, and main control logic.</li>
-								<li>Fully synthesizable for deployment on an FPGA board.</li>
+								<li>Created balanced training and testing sets using stratified sampling.</li>
+								<li>Benchmarked five models, with Random Forest and HistGradientBoosting emerging as the top performers.</li>
+								<li>Tuned hyperparameters for the top models using RandomizedSearchCV.</li>
+								<li>Combined the two optimized models into a Soft Voting Ensemble to create a more robust final model.</li>
 							</ul>
 						</div>
 					</div>
 				</div>
-
+				
+				<div class="project-card">
+					<div class="project-image">
+						<img src="assets/images/co2-dashboard.png" alt="Global CO₂ & Energy Trends">
+					</div>
+					<div class="project-content">
+						<h3>Global CO₂ & Energy Trends</h3>
+						<p>Analyzed worldwide CO₂ emissions and energy consumption using Python and Power BI. Built interactive dashboards, performed time-series forecasting with Prophet, and highlighted top contributing countries and future environmental trends.</p>
+						<div class="project-tags">
+							<span>Python</span>
+							<span>Power BI</span>
+							<span>Prophet</span>
+						</div>
+						<div class="project-links">
+							<a href="https://github.com/HanaNassef/global-co2-energy-trends" target="_blank" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
+							<button class="details-btn cta-button secondary">Details</button>
+						</div>
+						<div class="project-details-content" style="display: none;">
+							<h4>Project Overview</h4>
+							<p>This project looks at how CO2 emissions and energy use have changed over time, and where things might be heading next. It covers everything from cleaning messy datasets to building dashboards and running forecasts.</p>
+							<h4>Project Milestones</h4>
+							<ul>
+								<li><strong>Data Preparation:</strong> Cleaned and reshaped raw environmental data into a well-structured dataset using Python.</li>
+								<li><strong>Interactive Visualization:</strong> Pulled the cleaned data into Power BI to build dashboards for exploring trends by country and region.</li>
+								<li><strong>Predictive Modeling:</strong> Used the Facebook Prophet model to forecast the next 5 years of CO₂ emissions and energy consumption.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="project-card">
+					 <div class="project-image">
+						<img src="assets/images/ecommerce.PNG" alt="Full-Stack E-commerce Prototype">
+					</div>
+					<div class="project-content">
+						<h3>Full-Stack E-commerce Prototype</h3>
+						<p>Co-developed a responsive web application as part of a team project, from initial design in Figma to full implementation.</p>
+						<div class="project-tags">
+							<span>Angular</span>
+							<span>Node.js</span>
+							<span>MongoDB</span>
+						</div>
+						<div class="project-links">
+							<a href="https://github.com/HanaNassef/e-commerce-prototype" target="_blank" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
+							<button class="details-btn cta-button secondary">Details</button>
+						</div>
+						<div class="project-details-content" style="display: none;">
+							<h4>Project Overview</h4>
+							<p>This team project focused on developing a functional e-commerce web application. My primary role involved connecting the front-end (Angular) with the back-end (Node.js/Express) and the database (MongoDB) to handle user data and product information, demonstrating my ability to work on a full-stack application.</p>
+						</div>
+					</div>
+				</div>
+				
 				<div class="project-card">
 					<div class="project-image">
 						<img src="assets/images/rnns-bubble.PNG" alt="IMDB Sentiment Analysis">
@@ -246,68 +300,9 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="project-card">
-					 <div class="project-image">
-						<img src="assets/images/unsw-report.png" alt="Network Fault Detection">
-					</div>
-					<div class="project-content">
-						<h3>Network Fault Node Detection</h3>
-						<p>Built a machine learning pipeline to detect and predict fault nodes in a simulated network. Conducted model benchmarking, selected top-performing algorithms, and improved results through hyperparameter tuning and ensemble learning to achieve optimal accuracy.</p>
-						<div class="project-tags">
-							<span>Python</span>
-							<span>Scikit-learn</span>
-							<span>Ensemble Learning</span>
-						</div>
-						<div class="project-links">
-							<a href="https://github.com/HanaNassef/unsw-nb15-network-fault-detection" target="_blank" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
-							<button class="details-btn cta-button secondary">Details</button>
-						</div>
-						<div class="project-details-content" style="display: none;">
-							<h4>Project Overview</h4>
-							<p>This project applies ensemble learning techniques to the UNSW-NB15 dataset for network intrusion detection. A key challenge was the severe class imbalance, which was addressed by creating balanced samples for training and testing.</p>
-							<h4>Workflow</h4>
-							<ul>
-								<li>Created balanced training and testing sets using stratified sampling.</li>
-								<li>Benchmarked five models, with Random Forest and HistGradientBoosting emerging as the top performers.</li>
-								<li>Tuned hyperparameters for the top models using RandomizedSearchCV.</li>
-								<li>Combined the two optimized models into a Soft Voting Ensemble to create a more robust final model.</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
+				
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/co2-dashboard.png" alt="Global CO₂ & Energy Trends">
-					</div>
-					<div class="project-content">
-						<h3>Global CO₂ & Energy Trends</h3>
-						<p>Analyzed worldwide CO₂ emissions and energy consumption using Python and Power BI. Built interactive dashboards, performed time-series forecasting with Prophet, and highlighted top contributing countries and future environmental trends.</p>
-						<div class="project-tags">
-							<span>Python</span>
-							<span>Power BI</span>
-							<span>Prophet</span>
-						</div>
-						<div class="project-links">
-							<a href="https://github.com/HanaNassef/global-co2-energy-trends" target="_blank" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
-							<button class="details-btn cta-button secondary">Details</button>
-						</div>
-						<div class="project-details-content" style="display: none;">
-							<h4>Project Overview</h4>
-							<p>This project looks at how CO₂ emissions and energy use have changed over time, and where things might be heading next. It covers everything from cleaning messy datasets to building dashboards and running forecasts.</p>
-							<h4>Project Milestones</h4>
-							<ul>
-								<li><strong>Data Preparation:</strong> Cleaned and reshaped raw environmental data into a well-structured dataset using Python.</li>
-								<li><strong>Interactive Visualization:</strong> Pulled the cleaned data into Power BI to build dashboards for exploring trends by country and region.</li>
-								<li><strong>Predictive Modeling:</strong> Used the Facebook Prophet model to forecast the next 5 years of CO₂ emissions and energy consumption.</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div class="project-card">
-					 <div class="project-image">
 						<img src="assets/images/parallel.PNG" alt="C++ AutoParallelizer">
 					</div>
 					<div class="project-content">
@@ -335,9 +330,38 @@
 						</div>
 					</div>
 				</div>
+				
+				<div class="project-card">
+					<div class="project-image">
+						<img src="assets/images/modified-arch.PNG" alt="Verilog DSP Processor">
+					</div>
+					<div class="project-content">
+						<h3>Verilog Single-Cycle DSP Processor</h3>
+						<p>Designed and simulated a single-cycle CPU with an integrated DSP unit for efficient arithmetic processing. Synthesized for FPGA deployment using Xilinx Vivado.</p>
+						<div class="project-tags">
+							<span>Verilog</span>
+							<span>Xilinx Vivado</span>
+							<span>FPGA</span>
+						</div>
+						<div class="project-links">
+							<a href="https://github.com/HanaNassef/verilog-single-cycle-dsp" target="_blank" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
+							<button class="details-btn cta-button secondary">Details</button>
+						</div>
+						<div class="project-details-content" style="display: none;">
+							<h4>Project Overview</h4>
+							<p>This project implements a single-cycle CPU architecture with an integrated DSP unit, designed and simulated using Xilinx Vivado.</p>
+							<h4>Key Features</h4>
+							<ul>
+								<li>Single-cycle architecture for simplicity and educational value.</li>
+								<li>Implementation of a custom ALU and DSP unit.</li>
+								<li>Includes data memory, register file, and main control logic.</li>
+								<li>Fully synthesizable for deployment on an FPGA board.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
-
 		<section id="experience" class="scroll-reveal">
 			<h2>Professional Journey</h2>
 			<div class="timeline">
