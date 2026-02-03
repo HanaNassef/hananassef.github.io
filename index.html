@@ -26,9 +26,9 @@
     <ul>
         <li><a href="#home" class="nav-link active" data-tooltip="Home"><i class="fas fa-home"></i></a></li>
         <li><a href="#about" class="nav-link" data-tooltip="About"><i class="fas fa-user"></i></a></li>
-        <li><a href="#publications" class="nav-link" data-tooltip="Publications"><i class="fas fa-book-open"></i></a></li>
         <li><a href="#education" class="nav-link" data-tooltip="Education"><i class="fas fa-user-graduate"></i></a></li>
         <li><a href="#skills" class="nav-link" data-tooltip="Skills"><i class="fas fa-cogs"></i></a></li>
+        <li><a href="#publications" class="nav-link" data-tooltip="Research"><i class="fas fa-book-open"></i></a></li>
         <li><a href="#projects" class="nav-link" data-tooltip="Projects"><i class="fas fa-project-diagram"></i></a></li>
         <li><a href="#experience" class="nav-link" data-tooltip="Experience"><i class="fas fa-briefcase"></i></a></li>
         <li><a href="#services" class="nav-link" data-tooltip="Services"><i class="fas fa-handshake-angle"></i></a></li>
@@ -70,27 +70,6 @@
 			</div>
 		</section>
 
-        <section id="publications" class="scroll-reveal">
-            <h2>Publications</h2>
-            <div class="publications-container">
-                <div class="publication-card">
-                    <div class="pub-icon">
-                        <i class="fas fa-scroll"></i>
-                    </div>
-                    <div class="pub-content">
-                        <h3>AuraViT-FL: A Resource-Efficient 2D Hybrid Transformer Framework for Federated Lung Tumor Segmentation</h3>
-                        <p class="pub-journal">Published in <strong>Machine Learning & Knowledge Extraction (MDPI)</strong> — <span class="badge-q1">Q1 Journal</span></p>
-                        <p class="pub-desc">
-                            A novel framework leveraging hybrid transformers and federated learning to enhance lung tumor segmentation accuracy while ensuring data privacy and resource efficiency.
-                        </p>
-                        <a href="https://www.mdpi.com/2504-4990/8/2/34" target="_blank" class="cta-button secondary small">
-                            Read Paper <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-		
 		<section id="education" class="scroll-reveal">
 			<h2>Education & Certifications</h2>
 			<div class="timeline">
@@ -98,15 +77,10 @@
 					<div class="timeline-dot"></div>
 					<div class="timeline-content">
 						<h3><i class="fas fa-graduation-cap"></i> Nile University</h3>
-<<<<<<< HEAD
-                        <p class="timeline-date">Graduated: Jan 2026</p>
+						<p class="timeline-date">Graduated: Jan 2026</p>
 						<p>Bachelor of Science in Computer Engineering.</p>
                         <p><strong>GPA: 3.86 / 4.0</strong> (Highest Honors)</p>
                         <p class="small-text">Full scholarship recipient from Bank Misr.</p>
-=======
-						<p class="timeline-date">Expected Graduation: Feb 2026</p>
-						<p>Bachelor of Science in Computer Engineering. Full scholarship recipient from Bank Misr.</p>
->>>>>>> 2fc12b79fc22b240fac3ceecc02412f622a9fcd2
 					</div>
 				</div>
 				<div class="timeline-item">
@@ -181,9 +155,82 @@
 			</div>
 		</section>
 
+        <section id="publications" class="scroll-reveal">
+            <h2>Research & Publications</h2>
+            <div class="publications-container" style="flex-direction: column; align-items: center; gap: 40px;">
+                
+                <div class="publication-card featured" style="width: 100%;">
+                    <div class="pub-ribbon">Featured</div>
+                    <div class="pub-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="pub-content">
+                        <h3>AuraViT-FL: A Resource-Efficient 2D Hybrid Transformer Framework for Federated Lung Tumor Segmentation</h3>
+                        <p class="pub-journal">Published in <strong>Machine Learning & Knowledge Extraction (MDPI)</strong> — <span class="badge-q1">Q1 Journal</span></p>
+                        <p class="pub-desc">
+                            A novel framework leveraging hybrid transformers and federated learning to enhance lung tumor segmentation accuracy while ensuring data privacy and resource efficiency.
+                        </p>
+                        <a href="https://www.mdpi.com/2504-4990/8/2/34" target="_blank" class="cta-button secondary small">
+                            Read Paper <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="publication-card" style="width: 100%;">
+                    <div class="pub-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="pub-content">
+                        <h3>Intelligent Smart Home System: Secure Solution for Enhanced Efficiency and Comfort</h3>
+                        <p class="pub-journal">Presented at <strong>2024 International Conference on Future Telecommunications and AI (IEEE)</strong> — <span class="badge-conf">IEEE Conference</span></p>
+                        <p class="pub-desc">
+                            Designed a state-of-the-art smart home security system using Arduino and TinkerCad. The system integrates face recognition, automated lighting, and weather-based fan control to balance low-power technology with robust security.
+                        </p>
+                        <a href="https://ieeexplore.ieee.org/document/10950015" target="_blank" class="cta-button secondary small">
+                            Read on IEEE Xplore <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
 		<section id="projects" class="scroll-reveal">
 			<h2>My Projects</h2>
 			<div class="projects-container">
+                 <div class="project-card">
+					<div class="project-image">
+						<img src="assets/images/auravit.png" alt="AuraViT-FL Segmentation">
+					</div>
+					<div class="project-content">
+						<h3>AuraViT-FL (Graduation Project)</h3>
+						<p>Designed a privacy-preserving medical imaging framework using Federated Learning. The system allows multiple hospitals to collaboratively train a segmentation model without sharing patient data, achieving state-of-the-art accuracy.</p>
+						<div class="project-tags">
+							<span>Deep Learning</span>
+							<span>Federated Learning</span>
+							<span>Transformers</span>
+							<span>Medical Imaging</span>
+						</div>
+						<div class="project-links">
+							<a href="INSERT_COLLEAGUE_GITHUB_LINK" target="_blank" class="project-link">View Code <i class="fab fa-github"></i></a>
+                            <a href="https://www.mdpi.com/2504-4990/8/2/34" target="_blank" class="project-link">View Paper <i class="fas fa-external-link-alt"></i></a>
+							<button class="details-btn cta-button secondary">Details</button>
+						</div>
+						<div class="project-details-content" style="display: none;">
+							<h4>Project Overview</h4>
+							<p><strong>Grade: A+ (Top of Class).</strong> This project addresses the challenge of data privacy in medical AI. We developed "AuraViT-FL," a resource-efficient hybrid transformer architecture optimized for Federated Learning settings.</p>
+							
+							<h4>Technical Contributions</h4>
+							<ul>
+								<li><strong>Hybrid Architecture:</strong> Combined the local feature extraction of CNNs with the global context understanding of Vision Transformers (ViTs).</li>
+								<li><strong>Federated Strategy:</strong> Implemented the FedAvg algorithm to aggregate model updates from simulated hospital clients, ensuring raw data never left the local device.</li>
+								<li><strong>Optimization:</strong> Reduced computational cost significantly compared to standard ViTs, making it suitable for edge deployment in hospitals with limited hardware.</li>
+								<li><strong>Results:</strong> Achieved superior Dice scores on lung tumor segmentation benchmarks compared to standalone UNet and Swin-UNet models.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
 				<div class="project-card">
 					<div class="project-image">
 						<img src="assets/images/app.png" alt="Book Recommendation System App">
@@ -338,39 +385,6 @@
 				</div>
 				
 				<div class="project-card">
-						<div class="project-image">
-							<img src="assets/images/auravit.png" alt="AuraViT-FL Segmentation">
-						</div>
-						<div class="project-content">
-							<h3>AuraViT-FL</h3>
-							<p>Designed a privacy-preserving medical imaging framework using Federated Learning. The system allows multiple hospitals to collaboratively train a segmentation model without sharing patient data, achieving state-of-the-art accuracy.</p>
-							<div class="project-tags">
-								<span>Deep Learning</span>
-								<span>Federated Learning</span>
-								<span>Transformers</span>
-								<span>Medical Imaging</span>
-							</div>
-							<div class="project-links">
-								<a href="https://github.com/Mohamed-Alaa-1/AuraVIT/" target="_blank" class="project-link">View Code <i class="fab fa-github"></i></a>
-								<a href="https://www.mdpi.com/2504-4990/8/2/34" target="_blank" class="project-link">View Paper <i class="fas fa-external-link-alt"></i></a>
-								<button class="details-btn cta-button secondary">Details</button>
-							</div>
-							<div class="project-details-content" style="display: none;">
-								<h4>Project Overview</h4>
-								<p><strong>Grade: A+.</strong> This project addresses the challenge of data privacy in medical AI. We developed "AuraViT-FL," a resource-efficient hybrid transformer architecture optimized for Federated Learning settings.</p>
-								
-								<h4>Technical Contributions</h4>
-								<ul>
-									<li><strong>Hybrid Architecture:</strong> Combined the local feature extraction of CNNs with the global context understanding of Vision Transformers (ViTs).</li>
-									<li><strong>Federated Strategy:</strong> Implemented the FedAvg algorithm to aggregate model updates from simulated hospital clients, ensuring raw data never left the local device.</li>
-									<li><strong>Optimization:</strong> Reduced computational cost significantly compared to standard ViTs, making it suitable for edge deployment in hospitals with limited hardware.</li>
-									<li><strong>Results:</strong> Achieved superior Dice scores on lung tumor segmentation benchmarks compared to standalone UNet and Swin-UNet models.</li>
-								</ul>
-							</div>
-						</div>
-				</div>
-				
-				<div class="project-card">
 					<div class="project-image">
 						<img src="assets/images/modified-arch.PNG" alt="Verilog DSP Processor">
 					</div>
@@ -440,46 +454,46 @@
 		</section>
 		
 		<section id="services" class="scroll-reveal">
-			<h2>Services I Offer</h2>
-			<p class="section-intro">Whether you need help with a complex dataset, academic research, or a dedicated tutor, here's how I can contribute to your success.</p>
-			<div class="services-container">
-				<div class="service-card">
-					<i class="fas fa-database"></i>
-					<h3>Data & ML Services</h3>
-					<ul>
-						<li>Dataset Cleaning & Preprocessing</li>
-						<li>Advanced Feature Engineering</li>
-						<li>Interactive Dashboard Creation</li>
-						<li>Machine & Deep Learning Models</li>
-					</ul>
-				</div>
+            <h2>Services I Offer</h2>
+            <p class="section-intro">Whether you need help with a complex dataset, academic research, or a dedicated tutor, here's how I can contribute to your success.</p>
+            <div class="services-container">
+                <div class="service-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Data & ML Services</h3>
+                    <ul>
+                        <li>Dataset Cleaning & Preprocessing</li>
+                        <li>Advanced Feature Engineering</li>
+                        <li>Interactive Dashboard Creation</li>
+                        <li>Machine & Deep Learning Models</li>
+                    </ul>
+                </div>
 
-				<div class="service-card">
-					<i class="fas fa-search-plus"></i>
-					<h3>Research Assistance</h3>
-					<ul>
-						<li>Literature Review & Gaps Analysis</li>
-						<li>Technical Writing (LaTeX/Overleaf)</li>
-						<li>Methodology Design & Validation</li>
-						<li>Paper Formatting & Editing</li>
-					</ul>
-				</div>
+                <div class="service-card">
+                    <i class="fas fa-search-plus"></i>
+                    <h3>Research Assistance</h3>
+                    <ul>
+                        <li>Literature Review & Gaps Analysis</li>
+                        <li>Technical Writing (LaTeX/Overleaf)</li>
+                        <li>Methodology Design & Validation</li>
+                        <li>Paper Formatting & Editing</li>
+                    </ul>
+                </div>
 
-				<div class="service-card">
-					<i class="fas fa-chalkboard-teacher"></i>
-					<h3>Tutoring Services</h3>
-					<ul>
-						<li>Maths & Physics (School/Uni Level)</li>
-						<li>ICT & Computer Science</li>
-						<li>Core Engineering Concepts</li>
-						<li>Data Science Fundamentals</li>
-					</ul>
-				</div>
-			</div>
-			<div class="services-cta">
-				<p>Have a project or a learning goal in mind? Let's connect!</p>
-			</div>
-		</section>
+                <div class="service-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Tutoring Services</h3>
+                    <ul>
+                        <li>Maths & Physics (School/Uni Level)</li>
+                        <li>ICT & Computer Science</li>
+                        <li>Core Engineering Concepts</li>
+                        <li>Data Science Fundamentals</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="services-cta">
+                <p>Have a project or a learning goal in mind? Let's connect!</p>
+            </div>
+        </section>
 
 		 <footer id="contact" class="scroll-reveal">
 			<h2>Get In Touch</h2>
@@ -492,7 +506,7 @@
 				<a href="https://www.linkedin.com/in/hana-nassef/" target="_blank" class="cta-button">
 					<i class="fab fa-linkedin"></i> Message on LinkedIn
 				</a>
-                 <a href="https://khamsat.com/user/hananassef" target="_blank" class="cta-button secondary">
+                 <a href="https://khamsat.com/user/hananassef" target="_blank" class="cta-button">
 					<i class="fas fa-briefcase"></i> Hire me on Khamsat
 				</a>
 			</div>
