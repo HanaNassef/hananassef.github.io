@@ -26,6 +26,7 @@
     <ul>
         <li><a href="#home" class="nav-link active" data-tooltip="Home"><i class="fas fa-home"></i></a></li>
         <li><a href="#about" class="nav-link" data-tooltip="About"><i class="fas fa-user"></i></a></li>
+        <li><a href="#publications" class="nav-link" data-tooltip="Publications"><i class="fas fa-book-open"></i></a></li>
         <li><a href="#education" class="nav-link" data-tooltip="Education"><i class="fas fa-user-graduate"></i></a></li>
         <li><a href="#skills" class="nav-link" data-tooltip="Skills"><i class="fas fa-cogs"></i></a></li>
         <li><a href="#projects" class="nav-link" data-tooltip="Projects"><i class="fas fa-project-diagram"></i></a></li>
@@ -59,8 +60,7 @@
 					</p>
 					<p>
 						Alongside my technical journey, I have a deep passion for <strong>teaching</strong>. 
-						I've supported both university engineering students as a junior TA and IGCSE students in math and sciences, which has strengthened my ability to explain complex ideas clearly. 
-						I’m also a <strong>co-author of an IEEE-published paper</strong>, contributing research that reflects my curiosity and commitment to learning. 
+						I'm also a <strong>co-author of an IEEE-published paper</strong> and have recently published in a <strong>Q1 Journal</strong>, contributing research that reflects my curiosity and commitment to learning. 
 						My goal is to continue growing as an engineer, educator, and problem solver.
 					</p>
 					<div class="about-buttons">
@@ -69,6 +69,27 @@
 				</div>
 			</div>
 		</section>
+
+        <section id="publications" class="scroll-reveal">
+            <h2>Publications</h2>
+            <div class="publications-container">
+                <div class="publication-card">
+                    <div class="pub-icon">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <div class="pub-content">
+                        <h3>AuraViT-FL: A Resource-Efficient 2D Hybrid Transformer Framework for Federated Lung Tumor Segmentation</h3>
+                        <p class="pub-journal">Published in <strong>Machine Learning & Knowledge Extraction (MDPI)</strong> — <span class="badge-q1">Q1 Journal</span></p>
+                        <p class="pub-desc">
+                            A novel framework leveraging hybrid transformers and federated learning to enhance lung tumor segmentation accuracy while ensuring data privacy and resource efficiency.
+                        </p>
+                        <a href="https://www.mdpi.com/2504-4990/8/2/34" target="_blank" class="cta-button secondary small">
+                            Read Paper <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 		
 		<section id="education" class="scroll-reveal">
 			<h2>Education & Certifications</h2>
@@ -77,8 +98,10 @@
 					<div class="timeline-dot"></div>
 					<div class="timeline-content">
 						<h3><i class="fas fa-graduation-cap"></i> Nile University</h3>
-						<p class="timeline-date">Expected Graduation: Dec 2025</p>
-						<p>Bachelor of Science in Computer Engineering. Full scholarship recipient from Bank Misr.</p>
+                        <p class="timeline-date">Graduated: Jan 2026</p>
+						<p>Bachelor of Science in Computer Engineering.</p>
+                        <p><strong>GPA: 3.86 / 4.0</strong> (Highest Honors)</p>
+                        <p class="small-text">Full scholarship recipient from Bank Misr.</p>
 					</div>
 				</div>
 				<div class="timeline-item">
@@ -310,6 +333,39 @@
 				</div>
 				
 				<div class="project-card">
+						<div class="project-image">
+							<img src="assets/images/auravit.png" alt="AuraViT-FL Segmentation">
+						</div>
+						<div class="project-content">
+							<h3>AuraViT-FL</h3>
+							<p>Designed a privacy-preserving medical imaging framework using Federated Learning. The system allows multiple hospitals to collaboratively train a segmentation model without sharing patient data, achieving state-of-the-art accuracy.</p>
+							<div class="project-tags">
+								<span>Deep Learning</span>
+								<span>Federated Learning</span>
+								<span>Transformers</span>
+								<span>Medical Imaging</span>
+							</div>
+							<div class="project-links">
+								<a href="https://github.com/Mohamed-Alaa-1/AuraVIT/" target="_blank" class="project-link">View Code <i class="fab fa-github"></i></a>
+								<a href="https://www.mdpi.com/2504-4990/8/2/34" target="_blank" class="project-link">View Paper <i class="fas fa-external-link-alt"></i></a>
+								<button class="details-btn cta-button secondary">Details</button>
+							</div>
+							<div class="project-details-content" style="display: none;">
+								<h4>Project Overview</h4>
+								<p><strong>Grade: A+.</strong> This project addresses the challenge of data privacy in medical AI. We developed "AuraViT-FL," a resource-efficient hybrid transformer architecture optimized for Federated Learning settings.</p>
+								
+								<h4>Technical Contributions</h4>
+								<ul>
+									<li><strong>Hybrid Architecture:</strong> Combined the local feature extraction of CNNs with the global context understanding of Vision Transformers (ViTs).</li>
+									<li><strong>Federated Strategy:</strong> Implemented the FedAvg algorithm to aggregate model updates from simulated hospital clients, ensuring raw data never left the local device.</li>
+									<li><strong>Optimization:</strong> Reduced computational cost significantly compared to standard ViTs, making it suitable for edge deployment in hospitals with limited hardware.</li>
+									<li><strong>Results:</strong> Achieved superior Dice scores on lung tumor segmentation benchmarks compared to standalone UNet and Swin-UNet models.</li>
+								</ul>
+							</div>
+						</div>
+				</div>
+				
+				<div class="project-card">
 					<div class="project-image">
 						<img src="assets/images/modified-arch.PNG" alt="Verilog DSP Processor">
 					</div>
@@ -380,7 +436,7 @@
 		
 		<section id="services" class="scroll-reveal">
 			<h2>Services I Offer</h2>
-			<p class="section-intro">Whether you need help with a complex dataset or a dedicated tutor, here's how I can contribute to your success.</p>
+			<p class="section-intro">Whether you need help with a complex dataset, academic research, or a dedicated tutor, here's how I can contribute to your success.</p>
 			<div class="services-container">
 				<div class="service-card">
 					<i class="fas fa-database"></i>
@@ -389,14 +445,26 @@
 						<li>Dataset Cleaning & Preprocessing</li>
 						<li>Advanced Feature Engineering</li>
 						<li>Interactive Dashboard Creation</li>
-						<li>Machine & Deep Learning Model Development</li>
+						<li>Machine & Deep Learning Models</li>
 					</ul>
 				</div>
+
+				<div class="service-card">
+					<i class="fas fa-search-plus"></i>
+					<h3>Research Assistance</h3>
+					<ul>
+						<li>Literature Review & Gaps Analysis</li>
+						<li>Technical Writing (LaTeX/Overleaf)</li>
+						<li>Methodology Design & Validation</li>
+						<li>Paper Formatting & Editing</li>
+					</ul>
+				</div>
+
 				<div class="service-card">
 					<i class="fas fa-chalkboard-teacher"></i>
 					<h3>Tutoring Services</h3>
 					<ul>
-						<li>Maths & Physics (School & University Level)</li>
+						<li>Maths & Physics (School/Uni Level)</li>
 						<li>ICT & Computer Science</li>
 						<li>Core Engineering Concepts</li>
 						<li>Data Science Fundamentals</li>
@@ -419,13 +487,17 @@
 				<a href="https://www.linkedin.com/in/hana-nassef/" target="_blank" class="cta-button">
 					<i class="fab fa-linkedin"></i> Message on LinkedIn
 				</a>
+                 <a href="https://khamsat.com/user/hananassef" target="_blank" class="cta-button secondary">
+					<i class="fas fa-briefcase"></i> Hire me on Khamsat
+				</a>
 			</div>
 
 			<div class="social-links">
 				<a href="https://github.com/hananassef" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
 				<a href="https://www.linkedin.com/in/hana-nassef/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://khamsat.com/user/hananassef" target="_blank" aria-label="Khamsat"><i class="fas fa-briefcase"></i></a>
 			</div>
-			<p class="copyright">&copy; 2025 Hana Nassef. All Rights Reserved.</p>
+			<p class="copyright">&copy; 2026 Hana Nassef. All Rights Reserved.</p>
 		</footer>
 
         <div id="project-modal" class="modal">

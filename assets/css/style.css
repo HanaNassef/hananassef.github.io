@@ -740,3 +740,78 @@ section {
         left: 0;
     }
 }
+
+/* --- Publications Section --- */
+.publications-container {
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.publication-card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publication-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: var(--primary-color);
+}
+
+.pub-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+    padding-top: 5px;
+}
+
+.pub-content h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.pub-journal {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.badge-q1 {
+    background-color: rgba(137, 185, 224, 0.2);
+    color: var(--primary-color);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-left: 8px;
+}
+
+.pub-desc {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.cta-button.small {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .publication-card {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .pub-icon {
+        font-size: 2.5rem;
+    }
+}
