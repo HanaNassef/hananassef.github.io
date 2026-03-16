@@ -854,3 +854,72 @@ section {
 .publication-card:hover {
     border-color: var(--primary-color);
 }
+
+/* --- Mini Projects Styles --- */
+.mini-projects-wrapper {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border-color);
+}
+
+.mini-projects-title {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.mini-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.mini-project-item {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.mini-project-item:hover {
+    border-color: var(--primary-color);
+    background-color: rgba(137, 185, 224, 0.03);
+}
+
+.mini-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.mini-header h4 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.mini-header a {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+.mini-header a:hover {
+    color: var(--primary-color);
+}
+
+.mini-project-item p {
+    font-size: 0.85rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .mini-projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
