@@ -203,31 +203,31 @@
 						<img src="assets/images/auravit.png" alt="AuraViT-FL Segmentation">
 					</div>
 					<div class="project-content">
-						<h3>AuraViT-FL</h3>
-						<p>Designed a privacy-preserving medical imaging framework using Federated Learning. The system allows multiple hospitals to collaboratively train a segmentation model without sharing patient data, achieving state-of-the-art accuracy.</p>
-						<div class="project-tags">
-							<span>Federated Learning</span>
-							<span>ViT</span>
-							<span>Segmentation</span>
+							<h3>AuraViT-FL</h3>
+							<p>A resource-efficient hybrid transformer framework designed for privacy-preserving medical imaging. It enables multi-institutional federated learning for precise lung tumor segmentation on CT scans, eliminating the need to share sensitive patient data while maintaining near-centralized accuracy.</p>
+							<div class="project-tags">
+								<span>Federated Learning</span>
+								<span>Medical Imaging</span>
+								<span>Hybrid Vision Transformers</span>
+							</div>
+							<div class="project-links">
+								<a href="https://github.com/Mohamed-Alaa-1/AuraVIT" target="_blank" class="project-link">View Code <i class="fab fa-github"></i></a>
+								<a href="https://www.mdpi.com/2504-4990/8/2/34" target="_blank" class="project-link">View Paper <i class="fas fa-external-link-alt"></i></a>
+								<button class="details-btn cta-button secondary">Details</button>
+							</div>
+							<div class="project-details-content" style="display: none;">
+								<h4>Research Framework Overview</h4>
+								<p>AuraViT-FL addresses the critical challenge of data silos in healthcare by enabling secure, multi-institutional collaboration. The framework introduces a sophisticated hybrid architecture combining Vision Transformers (ViT), Atrous Spatial Pyramid Pooling (ASPP), and attention-gated residual connections to achieve state-of-the-art lung tumor segmentation without exposing private patient records.</p>
+								
+								<h4>Technical Innovations & Results</h4>
+								<ul>
+									<li><strong>Privacy-Preserving Federated Setup:</strong> Engineered a robust distributed training environment using FedProx, adaptive weighted aggregation, and a dynamic virtual client strategy to effectively handle heterogeneous data across simulated clinical nodes.</li>
+									<li><strong>Scalable Model Variants:</strong> Developed the standard AuraViT (136M parameters) alongside the Lightweight AuraViT (LAURA) family—including Small, Tiny, and Mobile variants—specifically designed for resource-constrained edge deployment in medical facilities.</li>
+									<li><strong>Hybrid Architecture:</strong> Fused the global contextual understanding of ViT encoders with the precise localized feature extraction of convolutional blocks, optimizing 2D tumor segmentation.</li>
+									<li><strong>High-Efficiency Performance:</strong> The federated standard model achieved a global mean Dice score of 80.81%, rivaling centralized baselines. Notably, the LAURA Mobile variant reduced computational complexity by over 96% (~5.5M parameters) while sustaining highly competitive accuracy (82.96% Dice on the MSD Lung dataset).</li>
+								</ul>
+							</div>
 						</div>
-						<div class="project-links">
-							<a href="https://github.com/Mohamed-Alaa-1/AuraVIT" target="_blank" class="project-link">View Code <i class="fab fa-github"></i></a>
-                            <a href="https://www.mdpi.com/2504-4990/8/2/34" target="_blank" class="project-link">View Paper <i class="fas fa-external-link-alt"></i></a>
-							<button class="details-btn cta-button secondary">Details</button>
-						</div>
-						<div class="project-details-content" style="display: none;">
-							<h4>Project Overview</h4>
-							<p><strong>Grade: A+ (Top of Class).</strong> This project addresses the challenge of data privacy in medical AI. We developed "AuraViT-FL," a resource-efficient hybrid transformer architecture optimized for Federated Learning settings.</p>
-							
-							<h4>Technical Contributions</h4>
-							<ul>
-								<li><strong>Hybrid Architecture:</strong> Combined the local feature extraction of CNNs with the global context understanding of Vision Transformers (ViTs).</li>
-								<li><strong>Federated Strategy:</strong> Implemented the FedAvg algorithm to aggregate model updates from simulated hospital clients, ensuring raw data never left the local device.</li>
-								<li><strong>Optimization:</strong> Reduced computational cost significantly compared to standard ViTs, making it suitable for edge deployment in hospitals with limited hardware.</li>
-								<li><strong>Results:</strong> Achieved superior Dice scores on lung tumor segmentation benchmarks compared to standalone UNet and Swin-UNet models.</li>
-							</ul>
-						</div>
-					</div>
 				</div>
 
 				<div class="project-card">
