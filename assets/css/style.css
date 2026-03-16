@@ -820,7 +820,7 @@ section {
 .skill-card ul {
     -ms-overflow-style: none;  
     scrollbar-width: none; 
-
+}
 .skill-card ul::-webkit-scrollbar {
     display: none; 
 }
