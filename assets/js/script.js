@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Project Modal Logic ---
+// --- Project Modal Logic (Improved) ---
     const modal = document.getElementById('project-modal');
     if (modal) {
         const closeBtn = modal.querySelector('.close-btn');
@@ -196,13 +196,26 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.addEventListener('click', () => {
                 const card = btn.closest('.project-card');
 
-                const imgSrc = card.querySelector('.project-image img').src;
+                // Check for image (Mini projects card might not have one)
+                const imgElement = card.querySelector('.project-image img');
+                const imgSrc = imgElement ? imgElement.src : '';
+                
                 const title = card.querySelector('.project-content h3').innerText;
                 const tagsHTML = card.querySelector('.project-tags').innerHTML;
                 const descriptionHTML = card.querySelector('.project-details-content').innerHTML;
-                const githubLink = card.querySelector('.project-link').href;
+                
+                // Check for GitHub link
+                const linkElement = card.querySelector('.project-link');
+                const githubLink = linkElement ? linkElement.href : 'https://github.com/HanaNassef';
 
-                modalImgContainer.innerHTML = `<img src="${imgSrc}" alt="${title}">`;
+                // Populate Modal
+                if (imgSrc) {
+                    modalImgContainer.innerHTML = `<img src="${imgSrc}" alt="${title}">`;
+                    modalImgContainer.style.display = 'block';
+                } else {
+                    modalImgContainer.style.display = 'none'; // Hide if no image
+                }
+
                 modalTitle.innerText = title;
                 modalTags.innerHTML = tagsHTML;
                 modalDescription.innerHTML = descriptionHTML;
