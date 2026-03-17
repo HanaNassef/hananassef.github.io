@@ -180,9 +180,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-// --- Project Modal Logic (The Fixed Version) ---
+    // --- Project Modal Logic ---
     const modal = document.getElementById('project-modal');
-    
     if (modal) {
         const closeBtn = modal.querySelector('.close-btn');
         const detailsBtns = document.querySelectorAll('.details-btn');
@@ -194,37 +193,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const modalLink = document.getElementById('modal-link');
 
         detailsBtns.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                // Prevent any default behavior
-                e.preventDefault();
-                
+            btn.addEventListener('click', () => {
                 const card = btn.closest('.project-card');
-                if (!card) return;
 
-                // 1. Handle Image (Safe check)
-                const img = card.querySelector('.project-image img');
-                if (img && modalImgContainer) {
-                    modalImgContainer.innerHTML = `<img src="${img.src}" alt="Project Image">`;
-                    modalImgContainer.style.display = 'block';
-                } else if (modalImgContainer) {
-                    modalImgContainer.style.display = 'none';
-                }
+                const imgSrc = card.querySelector('.project-image img').src;
+                const title = card.querySelector('.project-content h3').innerText;
+                const tagsHTML = card.querySelector('.project-tags').innerHTML;
+                const descriptionHTML = card.querySelector('.project-details-content').innerHTML;
+                const githubLink = card.querySelector('.project-link').href;
 
-                // 2. Handle Text Content
-                const title = card.querySelector('h3');
-                const tags = card.querySelector('.project-tags');
-                const details = card.querySelector('.project-details-content');
-
-                if (modalTitle) modalTitle.innerText = title ? title.innerText : "Project Details";
-                if (modalTags) modalTags.innerHTML = tags ? tags.innerHTML : "";
-                if (modalDescription) modalDescription.innerHTML = details ? details.innerHTML : "";
-
-                // 3. Handle GitHub Link
-                // Look for the first actual <a> link in the card, or default to your profile
-                const firstLink = card.querySelector('.project-link');
-                if (modalLink) {
-                    modalLink.href = firstLink ? firstLink.href : "https://github.com/HanaNassef";
-                }
+                modalImgContainer.innerHTML = `<img src="${imgSrc}" alt="${title}">`;
+                modalTitle.innerText = title;
+                modalTags.innerHTML = tagsHTML;
+                modalDescription.innerHTML = descriptionHTML;
+                modalLink.href = githubLink;
                 
                 modal.classList.add('visible');
             });
@@ -234,12 +216,12 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.classList.remove('visible');
         };
 
-        if (closeBtn) closeBtn.addEventListener('click', closeModal);
-        
+        closeBtn.addEventListener('click', closeModal);
         modal.addEventListener('click', (e) => {
-            if (e.target === modal) closeModal();
+            if (e.target === modal) {
+                closeModal();
+            }
         });
-
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && modal.classList.contains('visible')) {
                 closeModal();
