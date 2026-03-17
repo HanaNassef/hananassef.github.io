@@ -191,39 +191,43 @@ document.addEventListener('DOMContentLoaded', () => {
         const modalTags = document.getElementById('modal-tags');
         const modalDescription = document.getElementById('modal-description');
         const modalLink = document.getElementById('modal-link');
+		
+		detailsBtns.forEach(btn => {
+			btn.addEventListener('click', () => {
+				const card = btn.closest('.project-card');
+				
+				// ADD THIS LINE to define the image element:
+				const imgEl = card.querySelector('.project-image img');
+				
+				const imgSrc = imgEl ? imgEl.src : null;
+				const linkEl = card.querySelector('.project-link');
+				const githubLink = linkEl ? linkEl.href : '#';
+				const title = card.querySelector('.project-content h3').innerText;
+				const tagsHTML = card.querySelector('.project-tags').innerHTML;
+				const descriptionHTML = card.querySelector('.project-details-content').innerHTML;
 
-detailsBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const card = btn.closest('.project-card');
-        const imgSrc = imgEl ? imgEl.src : null;
-        const linkEl = card.querySelector('.project-link');
-        const githubLink = linkEl ? linkEl.href : '#';
-        const title = card.querySelector('.project-content h3').innerText;
-        const tagsHTML = card.querySelector('.project-tags').innerHTML;
-        const descriptionHTML = card.querySelector('.project-details-content').innerHTML;
+				if (imgSrc) {
+					modalImgContainer.innerHTML = `<img src="${imgSrc}" alt="${title}">`;
+					modalImgContainer.style.display = 'block'; 
+				} else {
+					modalImgContainer.innerHTML = '';
+					modalImgContainer.style.display = 'none'; 
+				}
 
-        if (imgSrc) {
-            modalImgContainer.innerHTML = `<img src="${imgSrc}" alt="${title}">`;
-            modalImgContainer.style.display = 'block'; 
-        } else {
-            modalImgContainer.innerHTML = '';
-            modalImgContainer.style.display = 'none'; 
-        }
-
-        modalTitle.innerText = title;
-        modalTags.innerHTML = tagsHTML;
-        modalDescription.innerHTML = descriptionHTML;
-        
-        if (githubLink !== '#') {
-            modalLink.href = githubLink;
-            modalLink.style.display = 'inline-block';
-        } else {
-            modalLink.style.display = 'none'; 
-        }
-        
-        modal.classList.add('visible');
-    });
-});
+				modalTitle.innerText = title;
+				modalTags.innerHTML = tagsHTML;
+				modalDescription.innerHTML = descriptionHTML;
+				
+				if (githubLink !== '#') {
+					modalLink.href = githubLink;
+					modalLink.style.display = 'inline-block';
+				} else {
+					modalLink.style.display = 'none'; 
+				}
+				
+				modal.classList.add('visible');
+			});
+		});
 
         const closeModal = () => {
             modal.classList.remove('visible');
