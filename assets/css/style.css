@@ -923,3 +923,51 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+/* --- Internal Mini-Project List Styles --- */
+.mini-list-container {
+    margin-top: 20px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
+.mini-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(26, 43, 77, 0.5); /* Fainter version of your border-color */
+}
+
+.mini-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.mini-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.mini-item-header h5 {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.mini-item-header a {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+.mini-item-header a:hover {
+    color: var(--primary-color);
+}
+
+.mini-item p {
+    font-size: 0.85rem !important;
+    line-height: 1.5;
+    margin: 0;
+}
