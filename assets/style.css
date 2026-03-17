@@ -325,7 +325,7 @@ section {
 /* --- Projects Section --- */
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(2, 1fr); 
     gap: 30px;
 }
 
@@ -643,6 +643,7 @@ section {
 }
 
 #modal-tags {
+    display: none;
     margin-bottom: 20px;
 }
 
@@ -739,6 +740,9 @@ section {
     }
     .timeline-dot, .timeline-item:nth-child(odd) .timeline-dot, .timeline-item:nth-child(even) .timeline-dot {
         left: 0;
+    }
+	.projects-container {
+        grid-template-columns: 1fr; 
     }
 }
 
