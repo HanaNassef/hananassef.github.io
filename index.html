@@ -152,6 +152,15 @@
 						<li>FPGA design with Vivado</li>
 					</ul>
 				</div>
+				<div class="skill-card">
+					<i class="fas fa-microchip"></i>
+					<h3>Tools & Deployment</h3>
+					<ul>
+						<li>Docker & Containerization</li>
+						<li>W&B Experiment Tracking</li>
+						<li>Flask API Development</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 
@@ -232,33 +241,31 @@
 
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/app.png" alt="Book Recommendation System App">
+						<img src="assets/images/app.png" alt="Production Book Recommendation System">
 					</div>
 					<div class="project-content">
-						<h3>Book Recommendation System</h3>
-						<p>Developed a content-based recommendation engine and a Flask API to provide real-time book suggestions. The project features TF-IDF, cosine similarity, and fuzzy matching for a robust user experience.</p>
+						<h3>Book Recommendation System (v2.0)</h3>
+						<p>A production-ready ML service featuring a weighted TF-IDF engine and Dockerized Flask API. It includes automated model training and experiment tracking via Weights & Biases (W&B).</p>
 						<div class="project-tags">
-							<span>Python</span>
-							<span>Scikit-learn</span>
-							<span>Flask</span>
+							<span>Docker</span>
+							<span>MLOps</span>
+							<span>W&B Tracking</span>
+							<span>N-Grams</span>
 						</div>
 						<div class="project-links">
 							<a href="https://github.com/HanaNassef/book-rec-system" target="_blank" class="project-link">View on GitHub <i class="fab fa-github"></i></a>
-							<a href="https://drive.google.com/file/d/1C_E97BnvBAcRogJ8IxtKNn5DYuIx8wj0/view?usp=drive_link" target="_blank" class="project-link">Watch Demo <i class="fas fa-play-circle"></i></a>
 							<button class="details-btn cta-button secondary">Details</button>
 						</div>
 						<div class="project-details-content" style="display: none;">
-							<h4>Project Overview</h4>
-							<p>This project is a complete book recommendation system, from data cleaning to a full-stack web application. It serves as a strong demonstration of a machine learning pipeline, API development, and data visualization. The system leverages content-based filtering, recommending books with similar genres and descriptions.</p>
+							<h4>Engineering Overview</h4>
+							<p>This project evolved a basic prototype into a robust ML service. It focuses on the reliability of the recommendation pipeline and the portability of the environment.</p>
 							
-							<h4>Key Technologies & Concepts</h4>
+							<h4>Technical Innovations</h4>
 							<ul>
-								<li><strong>Python:</strong> The foundational language for the entire project, used for both the machine learning pipeline and the Flask API.</li>
-								<li><strong>Scikit-learn:</strong> Utilized for the core recommendation logic, including <strong>TF-IDF vectorization</strong> and <strong>cosine similarity</strong>, to measure the semantic similarity between books.</li>
-								<li><strong>Flask:</strong> A lightweight web framework used to build a robust back-end API that communicates with the front-end to serve real-time recommendations.</li>
-								<li><strong>Dash:</strong> Used to create the **dynamic and interactive dashboard** for the exploratory data analysis (EDA) notebook, showcasing data visualizations in a clean, web-based format.</li>
-								<li><strong>Pandas:</strong> Employed for all data manipulation, cleaning, and preprocessing tasks, from loading the dataset to preparing it for the recommendation model.</li>
-								<li><strong>FuzzyWuzzy:</strong> An essential library for implementing **fuzzy matching**, which enables the application to handle user typos in book titles and author names.</li>
+								<li><strong>Weighted NLP Engine:</strong> Implemented a 1.75x weighting boost for genres and used N-Grams (1,2) to capture complex book themes, achieving a <strong>0.95 Precision@10</strong> baseline.</li>
+								<li><strong>Experiment Tracking:</strong> Integrated Weights & Biases (W&B) to monitor hyperparameter tuning and model performance across different training runs.</li>
+								<li><strong>Containerization:</strong> Dockerized the entire stack, enabling automated training on container startup and secure deployment via environment-injected API keys.</li>
+								<li><strong>Production API:</strong> Built a robust Flask backend serving pre-computed similarity artifacts to ensure low-latency inference.</li>
 							</ul>
 						</div>
 					</div>
@@ -341,7 +348,15 @@
 									</div>
 									<p>Developed a source-to-source compiler tool to automatically parallelize 'for' loops by injecting OpenMP directives for multi-core performance.</p>
 								</div>
-
+								
+								<div class="mini-item">
+									<div class="mini-item-header">
+										<h5>Book Rec System (Prototype)</h5>
+										<a href="https://github.com/HanaNassef/book-rec-system-prototype" target="_blank"><i class="fab fa-github"></i></a>
+									</div>
+									<p>The original exploratory version of the system. Focuses on EDA, fuzzy matching for user inputs, and interactive data visualization using Dash.</p>
+								</div>
+								
 								<div class="mini-item">
 									<div class="mini-item-header">
 										<h5>Verilog DSP Processor</h5>
